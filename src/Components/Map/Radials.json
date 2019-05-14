@@ -1,0 +1,39 @@
+{
+  "type": "Topology",
+  "arcs": [],
+  "objects": {
+    "map": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Point",
+          "coordinates": [
+            29.0478515625,
+            41.11246878918086
+          ]
+        },
+        {
+          "type": "Point",
+          "coordinates": [
+            12.480468749999998,
+            41.96765920367816
+          ]
+        },
+        {
+          "type": "Point",
+          "coordinates": [
+            29.9267578125,
+            31.16580958786196
+          ]
+        },
+        {
+          "type": "Point",
+          "coordinates": [
+            55.986328125,
+            25.878994400196202
+          ]
+        }
+      ]
+    }
+  }
+}

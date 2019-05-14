@@ -1,0 +1,979 @@
+body{
+  background-color: #1B1B1B;
+  height:100%;
+  width:100%;
+  font-family: 'Cinzel', serif;
+  
+  /*font-family: -apple-system, BlinkMacSystemFont,
+      “Segoe UI”, “Roboto”, “Oxygen”,
+      “Ubuntu”, “Cantarell”, “Fira Sans”,
+      “Droid Sans”, “Helvetica Neue”, sans-serif;*/
+}
+
+body svg text{
+  font-family: 'Cinzel', serif;
+  /*font-family: -apple-system, BlinkMacSystemFont,
+      “Segoe UI”, “Roboto”, “Oxygen”,
+      “Ubuntu”, “Cantarell”, “Fira Sans”,
+      “Droid Sans”, “Helvetica Neue”, sans-serif;*/
+
+}
+
+
+
+
+
+
+/* ====================== PAGE FLEX BOX LAYOUT =================== */
+
+
+/* --------- APP  --------- */
+
+/*
+.StatsPlatformContainer{
+  display         : flex    ;
+  flex-direction  : column  ;
+}
+
+.HeaderContainer {
+  display         : flex                 ;
+  flex-direction  : row                  ;
+  background-color: #2D2D2D              ;
+  width           : 100%                 ;
+  box-shadow      : 2px 0.51px 3px black ;
+  z-index         : 5                    ;
+  padding         : 1vh                  ;
+  -webkit-user-select  : none   ;
+  -webkit-touch-callout: none   ;
+}
+
+.ChartContainer{
+  display         : flex        ;
+  flex-direction  : row         ;
+  width           : 100%        ;
+  -webkit-user-select  : none   ;
+  -webkit-touch-callout: none   ;
+}
+*/
+
+
+
+/* --------- APP HEADER --------- */
+
+/*
+.HeaderContainer .LogoContainer{
+  width           : 4%      ;
+  margin          : auto    ;
+  justify-content : space-around;
+  padding         : 0.5vmin ; 
+  min-width       : 50px    ;
+}
+
+.HeaderContainer .ButtonContainer{
+  width            : 94%     ;
+  padding-left     : 0.5vw   ;
+  margin           : auto    ;
+}
+
+
+.HeaderContainer button{
+  background-color   : #2D2D2D           ;
+  color              : #D5D5D5           ;
+  font-size          : 1.8vh             ;
+  height             : 80%               ;
+  border             : 1px solid #5A5A5A ;
+  font-weight        : bold              ;
+  padding-left       : 12px              ;
+  padding-right      : 12px              ;
+  margin-right       : 0.8vw             ;
+  -webkit-user-select: none              ;
+  user-select        : none              ;
+}
+
+.HeaderContainer button:hover{
+  background-color: #5A5A5A           ;
+  border          : 1px solid #5A5A5A ;
+  transition      : 0.3s              ;
+}
+
+.HeaderContainer button:focus{
+    outline: none ;
+}
+
+*/
+
+/* --------- CHART CONTAINER --------- */
+
+/*
+.ChartContainer .Sidebar{
+  background-color: #2D2D2D ;
+  width           : 5%      ;
+  max-width       : 50px    ;
+}
+
+.ChartContainer .FixedPageContent{
+  height        : 100%     ;
+  width         : 100%     ;
+  min-height    : 93vh     ;
+  overflow      : auto     ;
+}
+
+.FixedPageContent .PageContainer{
+  display        : flex    ;
+  flex-direction : row     ;
+  flex-wrap      : wrap    ;
+  height         : 100%    ;
+  width          : 100%    ;
+  padding-bottom : 1vh     ;
+  justify-content: center  ;
+}
+
+.PageContainer .ContentColumn{
+  display        : flex    ;
+  flex-direction : column  ;
+  height         : 100%    ;
+  width          : 70%     ;
+  padding-left   : 1vw     ;
+  padding-right  : 1vw     ;
+  padding-bottom : 1vh     ;
+  min-width      : 230px   ;
+}
+
+
+.PageContainer .InputColumn{
+  display        : flex    ;
+  flex-direction : column  ;
+  height         : 100%    ;
+  width          : 30%     ;
+  padding-left   : 1vw     ;
+  padding-bottom : 1vh     ;
+  min-width      : 230px   ;
+}
+
+*/
+
+
+/* --------- PAGES --------- */
+
+/*
+.ContentColumn .row{
+  display         : flex   ;
+  flex-direction  : row    ;
+  flex-wrap       : wrap   ;
+  height          : 50%    ;
+  min-height      : 46vh   ;
+  padding-left    : 1vw    ;
+  padding-top     : 1vw    ;
+  justify-content : center ;
+}
+
+.ContentColumn .TitleRow{
+  display         : flex   ;
+  flex-direction  : row    ;
+  flex-wrap       : wrap   ;
+  height          : 20%    ;
+  padding-left    : 1vw    ;
+  padding-top     : 1vw    ;
+  margin-bottom   : 1vw    ;
+  justify-content : center ;
+}
+*/
+
+/* ==========================  HEADER ========================== */
+/*
+.CompanyLogo {
+  padding      : 0.1vmin     ; 
+  margin       : auto        ;
+  max-width    : 32px        ;
+  max-height   : 32px        ;
+  filter       : invert(100%);
+}
+
+
+
+@media only screen and (max-width: 805px) {
+    .Component {
+        padding-top: 10px;
+    }
+
+    .InputColumn{
+      order:-1;
+    } 
+
+    .ContentColumn{
+      order:1;
+    } 
+
+    .InputContainer {
+        border-radius:6px;
+    }
+    .UserInput input[type=date]{
+        height: 5vh;
+    }
+}
+
+*/
+
+
+/* ===================== COMPONENTS GENERAL ===================== */
+
+/* Student Client List Card */
+/*
+.listCard{
+  display          : flex   ;
+  align-items      : left   ;
+  background-color : #3D3D3D;
+  color            : #D5D5D5;
+  min-height       : 30px   ;
+  margin-bottom    : 10px   ;
+  border-radius    : 3px    ;
+}
+
+
+.PersonsCard{
+  display : flex   ;
+  width   : 100%   ;
+}
+
+.PersonsCard .rankContainer{
+  width           : 10%     ;
+  font-size       : 2.5vmin ;
+  text-align      : center  ;
+  background-color: #2A2823 ;
+  border-right    : 1px solid #8F7638;
+}
+
+.PersonsCard .PersonInfo{
+  width        : 90%    ;
+  padding-left : 10px   ;
+  font-size    : 2vmin  ;
+}
+
+
+.PersonInfo .kpiInfo .dot{
+  padding-left : 2vmin;
+  padding-right: 2vmin;
+}
+
+
+.PersonInfo .kpiInfo{
+  font-size:1.7vmin ;
+}
+
+.PersonInfo .kpiInfo .KPI-number{
+  color : #D5D5D5;
+}
+
+.PersonInfo .kpiInfo .KPI-text{
+  color : #A5A5A5;
+}
+
+.PersonInfo .name {
+  padding-right: 3vmin   ;
+  font-size    : 2.5vmin ;
+}
+
+
+.GeneralInfoTextBox{
+  display          : flex     ;
+  flex-direction   : column   ;
+  height           : 100%     ;
+  border-radius    : 6px      ;
+  padding-top      : 1vmin    ;
+  padding-bottom   : 1vmin    ;
+  background-color : #2D2D2D  ; 
+  color            : #D5D5D5  ; 
+  
+}
+*/
+
+
+/* General Info Text Box */
+/*
+.GeneralInfoTextBox .titleContainer{
+   text-align    : left    ;
+   margin-left   : calc(0.05 * 20vw);
+   margin-top    : 1.5vh   ;
+   margin-bottom : 0.6vh   ;
+   height        : 12%     ;
+ }
+
+.GeneralInfoTextBox .textlist{
+  text-align   : left    ;
+  margin-left  : calc(0.05 * 20vw);
+  padding-left : 5vmin   ;
+  height       : 88%     ;
+  overflow     : auto    ;
+
+}
+
+.GeneralInfoTextBox .textlist .property{
+  margin-left: 3px     ;
+  color      : #A5A5A5 ;
+  font-size  : 1.8vmin ;
+}
+
+.GeneralInfoTextBox .textlist .number{
+  margin-left: 10px  ;
+  font-size  : 2vmin ;
+}
+*/
+
+
+/* Ranked List Block */
+/*
+.RankedListBlock{
+  display          : flex     ;
+  flex-direction   : column   ;
+  height           : 100%     ;
+  border-radius    : 6px      ;
+  padding-top      : 1vmin    ;
+  padding-bottom   : 1vmin    ;
+  background-color : #2D2D2D  ; 
+  color            : #D5D5D5  ; 
+
+}
+
+.RankedListBlock .titleContainer{
+   text-align    : left    ;
+   margin-left   : calc(0.05 * 20vw);
+   margin-top    : 1.5vh   ;
+   margin-bottom : 0.6vh   ;
+   height        : 12%     ;
+}
+
+.RankedListBlock .listContainer{
+  display         : flex    ;
+  flex-direction  : column  ;
+  text-align      : left    ;
+  background-color: #1F1F1F ;
+  padding-left    : 1vmin   ;
+  padding-right   : 1vmin   ;
+  margin-top      : 2%      ;
+  margin-left     : 2%      ;
+  margin-right    : 2%      ;
+  height          : 88%     ;
+  border-radius   : 3px     ;
+  box-shadow      : inset 1px 1px 5px black; 
+}
+
+.RankedListBlock .innerlistContainer{
+  text-align     : left    ;
+  padding-left   : 1vmin   ;
+  margin-top     : 1.5%    ;
+  padding-top    : 1vmin   ;
+  width          : 100%    ;
+  height         : 98%     ;
+  overflow       : auto    ;
+}
+
+.RankedListBlock .listContainer .noFoundMessage{
+  background-color: #3D3D3D ;
+  width           : 100%    ;
+  border-radius   : 3px     ;
+  text-align      : left    ;
+  margin-top      : 5%      ;
+  padding-left    : 1vw     ;
+  padding-top     : 1vh     ;
+  padding-bottom  : 1vh     ;
+}
+
+.RankedListBlock .card{
+  margin-right: 1.5vmin;
+}
+
+.ListingsCard{
+  display : flex   ;
+  width   : 100%   ;
+}
+
+.ListingsCard .rankContainer{
+  width           : 10%     ;
+  font-size       : 2.5vmin ;
+  text-align      : center  ;
+  background-color: #2A2823 ;
+  border-right    : 1px solid #8F7638;
+}
+
+.ListingsCard .PersonInfo{
+  display      : flex   ;
+  width        : 90%    ;
+  padding-left : 10px   ;
+  font-size    : 2vmin  ;
+}
+
+
+.ListingsCard .kpiInfo {
+  width       : 30%   ;
+  padding-top : 1vmin ;
+  display     : flex  ;
+}
+
+.ListingsCard .kpiInfo .KPI-number{
+  color      : #D5D5D5 ;
+  font-size  : 2.2vmin ;
+  width      : 40%     ;
+  text-align : right   ;
+}
+
+.ListingsCard .kpiInfo .KPI-text{
+  color        : #A5A5A5 ;
+  padding-left : 0.5vmin ;
+  width        : 60%     ;
+  text-align   : left    ;
+  font-size    : 1.3vmin ;
+}
+
+.ListingsCard .name {
+  padding-right: 3vmin   ;
+  padding-top  : 1vmin   ;
+  font-size    : 2.0vmin ;
+  width        : 70%     ;
+}
+*/
+
+
+
+/* User Input */
+/*
+.UserInput{
+  display        : flex    ;
+  flex-direction : column  ;
+  width          : 100%    ;
+  padding-top    : 1vw     ;
+  text-align     : left    ;
+  z-index        : 3       ;
+}
+
+.UserInput .InputContainer{
+  display                  : flex    ;
+  flex-direction           : column  ;
+  background-color         : #2D2D2D ;
+  border-top-left-radius   : 6px     ;
+  border-bottom-left-radius: 6px     ;
+  padding-bottom           : 10px    ;
+
+}
+
+
+.InputContainer .DateInputContainer{
+  display         : flex    ;
+  flex-direction  : column  ;
+  margin-top      : 10px    ;
+
+}
+
+.InputContainer .FilterContainer{
+  display         : flex    ;
+  flex-direction  : column  ;
+}
+
+.DateInputContainer span{
+  font-size    : 2vmin   ;
+  color        : #E5E5E5 ;
+  margin-left  : 1vw     ;
+  margin-bottom: 0.2vh   ;
+}
+
+.FilterContainer .FilterTitle{
+  font-size    : 2vmin    ;
+  color        : #E5E5E5 ;
+  margin-left  : 1vw     ;
+  margin-bottom: 0.2vh   ;
+}
+
+.FilterContainer .SearchTitleContainer{
+  display     : flex  ;
+}
+
+.FilterContainer .SearchTitleContainer .Asterisc{
+  display      : flex  ;
+  margin-left  : 0vw   ;
+  color        : white ;
+  font-size    : 1vmin ;
+  padding-left : 0.3vw ;
+  padding-right: 0.3vw;
+}
+
+
+.UserInput input[type=date] {
+  height          : 40px      ;
+  width           : 80%       ;
+  font-size       : 2vmin     ;
+  background-color: #434343   ; 
+  outline         : none      ; 
+  border          : 0         ; 
+  border-radius   : 3px       ;
+  padding         : 0 5px     ;
+  color           : #D5D5D5   ;  
+  margin-left     : 40px      ;
+  margin-bottom   : 20px      ;
+  font-family: -apple-system, BlinkMacSystemFont,
+      “Segoe UI”, “Roboto”, “Oxygen”,
+      “Ubuntu”, “Cantarell”, “Fira Sans”,
+      “Droid Sans”, “Helvetica Neue”, sans-serif;
+}
+*/
+/*
+.UserInput input[type=date]::-webkit-datetime-edit { padding: 1em;}
+.UserInput input[type=date]::-webkit-datetime-edit-fields-wrapper {}
+.UserInput input[type=date]::-webkit-datetime-edit-text { color: #E5E5E5; padding: 0 0.3em; }
+.UserInput input[type=date]::-webkit-datetime-edit-month-field { color: #E5E5E5;}
+.UserInput input[type=date]::-webkit-datetime-edit-day-field { color: #E5E5E5; }
+.UserInput input[type=date]::-webkit-datetime-edit-year-field { color: #E5E5E5; }
+.UserInput input[type=date]::-webkit-inner-spin-button { display: none; }
+.UserInput input[type=date]::-webkit-calendar-picker-indicator { color:#E5E5E5;}
+*/
+
+
+/*
+.SearchbarComponent .Select__control{
+  background-color: #434343 ;
+  border-color    : #434343 ;
+  border-radius   : 3px     ;
+  border-width    : 1px     ;
+  margin-right    : 1.3vmin ;
+  width           : 80%     ;
+  max-height      : 80px    ;
+  margin-left     : 40px    ;
+  margin-bottom   : 20px    ;
+}
+
+.SearchbarComponent .Select__control:hover{
+  border-color    : #434343 ;
+}
+
+.SearchbarComponent .Select__value-container{
+  border-radius: 0px  ;
+  max-height   : 80px ;
+  overflow     : auto ;
+}
+
+.SearchbarComponent .Select__placeholder{
+  color        : #A0A0A0  ;
+  border-radius: 0px      ;
+  font-size    : 2.35vmin ;
+}
+
+
+.SearchbarComponent .Select__single-value{
+  color: #D5D5D5 ;
+}
+
+.SearchbarComponent .Select__input input{
+  color    : #F5F5F5 ;
+  font-size: 17px    ;
+}
+
+.SearchbarComponent .Select__menu{
+  background-color: #434343;
+  max-height      : 250px  ;
+  margin-left     : 40px   ;
+  width           : 80%    ; 
+  border-radius   : 2px    ;
+  box-shadow      : 1px 1px 5px black; 
+
+}
+
+.SearchbarComponent .Select__group-heading{
+  background-color: #2A2823 ;
+  padding-top     : 2px     ;
+  padding-bottom  : 2px     ;
+  border-radius   : 0px     ;
+  color           : white   ;
+  font-size       : 2.2vmin ;
+  width           : 98%     ;
+  margin-left     : 2%      ;
+  box-shadow      : 0px 0px 2px 0px  #8F7638;
+}
+
+.SearchbarComponent .Select__option{
+  color        : #D5D5D5 ;
+  border-radius: 0px     ;
+  width        : 98%     ;
+  margin-left  : 2%      ;
+}
+
+.SearchbarComponent .Select__option:hover{
+  background-color: #2A2823;
+  transition      : 0.3s   ;
+}
+
+.SearchbarComponent .Select__option--isFocused{
+  background-color: #434343;
+}
+
+.SearchbarComponent .Select__option--isSelected{
+  background-color: #434343;
+  color           : #BC9F54  ;
+}
+
+.SearchbarComponent .Select__multi-value{
+  border-radius   : 4px     ;
+  background-color: #838383 ;
+}
+
+.SearchbarComponent .Select__multi-value__label{
+  border-top-left-radius   : 4px ; 
+  border-bottom-left-radius: 4px ;
+  border-right             : 2px ;
+  border-right: 1px solid #BC9F54;
+}
+
+.SearchbarComponent .Select__multi-value__remove{
+  border-top-left-radius    : 0px ; 
+  border-bottom-left-radius : 0px ;
+  border-top-right-radius   : 4px ; 
+  border-bottom-right-radius: 4px ;
+}
+
+.SearchbarComponent .Select__multi-value__remove:hover{
+  background-color : #BC9F54 ;
+  color            : #473b1c ;
+}
+
+#SearchbarToolTip{
+  background-color: #2A2823 ;
+  opacity         : 1       ;
+  box-shadow      : 0px 0px 2px 0px  #8F7638;
+}
+
+#SearchbarToolTip p{
+  color    : white ;
+  font-size: 1vmin ;
+  margin   : 0px   ;
+}
+*/
+
+/* =====================  PLOTS GENERAL  ===================== */
+/*
+.plotTitle{
+  text-anchor: start   ;
+  font-weight: 400     ;
+  font-size  : 2.3vmin ;
+}
+
+.componentBackground{
+  fill   : #2D2D2D ;
+  opacity: 1       ;
+}
+
+.plotBackground{
+  fill    : #2D2D2D ;
+  opacity : 1       ;
+}
+
+svg text{
+  fill: #D5D5D5 ;
+}
+
+.BackgroundSVG{
+  border-radius: 6px   ;
+  width        : 100%  ;
+  height       : 100%  ;
+  margin-right : 2vmin ;
+}
+
+.Component{
+  margin-right : 1vw  ;
+  max-height   : 45vh ;
+}
+*/
+
+/* =====================  PLOTS DASHBOARD  ===================== */
+
+.IntroPage{ 
+  position  : fixed ;
+  width     : 100%  ;
+  height    : 100%  ;
+    background-color: #006994;
+}
+
+.IntroPage .RomanEmpireMap{
+  position : relative;
+}
+
+
+.IntroPage .oceans{ 
+  fill         : #B7905D ;
+  fill-opacity : 0.65    ;
+  z-index      : -4      ;
+}
+
+.IntroPage .worldmap{
+  fill    : #EDC382 ;
+  z-index : -2      ;
+}
+
+.IntroPage .mapTitle{
+  margin-left : 32vw     ;
+  width       : 36vw     ;
+  z-index     : 10       ;
+  position    : absolute ;
+  left        : 0px      ;
+  top         : -1px     ;
+  background  : #DDCFA9  ;
+  box-shadow  : 0px 0px 10px #472416 ;
+  border-bottom-right-radius : 15px  ;
+  border-bottom-left-radius  : 15px  ;
+}
+
+.IntroPage .roseDesVents{
+  width    : 12vw     ;
+  height:auto;
+  z-index  : 10       ;
+  position : absolute ;
+  left     : 1vw      ;
+  top      : 36vh     ;
+}
+
+.IntroPage .seaMonster{
+  width    : 12vw     ;
+  z-index  : 10       ;
+  position : absolute ;
+  left     : 1vw      ;
+  top      : 15vh     ;
+}
+
+
+/* =====================  PLOTS RECRUITMENT  ===================== */
+/*
+.Recruitment .UserInput{
+  width     : 100%  ;
+}
+
+.Recruitment .InterviewDistributionChart{ 
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+
+.Recruitment .ClubhouseDistributionChart{
+  width     : 48%   ;
+  min-width : 200px ;
+  min-height: 160px ;
+}
+
+.Recruitment .GenderDistributionDonut {
+  width     : 31%   ;
+  min-width : 200px ;
+  min-height: 160px ;
+}
+
+
+.Recruitment .RefererDistributionChart {
+  width     : 31%   ;
+  min-width : 200px ;
+  min-height: 160px ;
+}
+
+
+.Recruitment .ProfileDistributionDonut {
+  width     : 31%   ;
+  min-width : 200px ;
+  min-height: 160px ;
+}
+
+
+.Recruitment .AgeDistributionChart {
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+
+.Recruitment .TrainingDistributionChart {
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+
+*/
+
+/* =====================  PLOTS PLANNING  ===================== */
+/*
+.Planning .UserInput{
+  width     : 100%  ;
+}
+
+
+.Planning .WageTypeStudentsDistribution{
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+  
+}
+
+.Planning .StatuteDistribution{
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+  
+}
+
+.Planning .WorkedStudentsDistribution{
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+  
+}
+
+.Planning .WorkedHoursDistribution{
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+
+.Planning .AverageShiftDistribution{
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+
+*/
+
+/* =====================  STUDENT-CLIENT  ===================== */
+/*
+.StudentClient .InputColumn{
+  padding-top: 80px;
+
+}
+
+.StudentClient .ContentColumn{
+  flex-direction  : row    ;
+  flex-wrap       : wrap   ;
+  justify-content : center ;
+}
+
+
+@media only screen and (max-width: 805px) {
+    .StudentClient .InputColumn {
+        padding-top: 1vh;
+    }
+}
+
+
+.RoleTitles{
+  font-size        : 3vmin   ;
+  text-align       : center  ;
+  background-color : #2A2823 ;
+  color            : #D5D5D5 ;
+  border-radius    : 2px     ;
+  box-shadow       : 0px 0px 2px 0px  #8F7638;
+  margin-bottom    : 3vmin   ;
+}
+
+.StudentClient .listCard:hover{
+  box-shadow       : 0px 0px 6px 0px #8F7638;
+  background-color : #2A2823 ;
+  text-decoration  : none    ;
+}
+
+.StudentClient .StudentColumn{
+  width        : 48%   ;
+  margin-top   : 2.6vh ;
+  margin-right : 1.8vw ;
+  min-width    : 200px ;
+}
+.StudentClient .ClientColumn{
+  width      : 48%   ;
+  margin-top : 2.6vh ;
+  min-width  : 200px ;
+}
+
+*/
+
+
+/* =====================  STUDENT PLOTS  ===================== */
+/*
+.StudentStats .StudentName{
+  background-color : #2D2D2D  ; 
+  color            : #D5D5D5  ; 
+  width            : 100%     ;
+  border-radius    : 4px      ;
+  margin-top       : 3vh      ;
+  padding-top      : 2vh      ;
+  padding-bottom   : 2vh      ;
+  padding-left     : 3vw      ;
+  padding-right    : 3vw      ;
+  text-align       : center   ;
+} 
+
+.StudentStats .GeneralInfo{
+  width      : 31%   ; 
+  min-width  : 200px ;
+  min-height : 160px ;
+}
+
+.StudentStats .ClientDistribution{
+  width      : 31%   ;
+  min-width  : 200px ;
+  min-height : 160px ;
+} 
+
+.StudentStats .FavoriteList{
+  width      : 31%   ;
+  min-width  : 200px ;
+  min-height : 160px ;
+}
+
+.StudentStats .WorkedStudentsDistribution {
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+
+.StudentStats .WorkedHoursDistribution {
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+
+*/
+/* =====================  CLIENT PLOTS  ===================== */
+/*
+
+.ClientStats .ClientName{
+  background-color : #2D2D2D  ; 
+  color            : #D5D5D5  ; 
+  width            : 100%     ;
+  border-radius    : 4px      ;
+  margin-top       : 3vh      ;
+  padding-top      : 2vh      ;
+  padding-bottom   : 2vh      ;
+  padding-left     : 3vw      ;
+  padding-right    : 3vw      ;
+  text-align       : center   ;
+} 
+
+.ClientStats .GeneralInfo{
+  width      : 31%   ; 
+  min-width  : 200px ;
+  min-height : 160px ;
+}
+
+.ClientStats .ClientDistribution{
+  width      : 31%   ;
+  min-width  : 200px ;
+  min-height : 160px ;
+} 
+
+.ClientStats .FavoriteList{
+  width      : 31%   ;
+  min-width  : 200px ;
+  min-height : 160px ;
+}
+
+.ClientStats .WorkedStudentsDistribution {
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+
+.ClientStats .WorkedHoursDistribution {
+  width     : 48%   ;
+  min-width : 300px ;
+  min-height: 160px ;
+}
+*/
+
+

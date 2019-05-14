@@ -1,0 +1,297 @@
+{
+  "type": "Topology",
+  "arcs": [
+    [
+      [
+        233,
+        4385
+      ],
+      [
+        14,
+        27
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        14,
+        22
+      ],
+      [
+        15,
+        22
+      ],
+      [
+        14,
+        22
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        15,
+        19
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        14,
+        16
+      ],
+      [
+        14,
+        16
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        17
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        24,
+        23
+      ],
+      [
+        26,
+        20
+      ],
+      [
+        26,
+        19
+      ],
+      [
+        24,
+        16
+      ],
+      [
+        29,
+        18
+      ],
+      [
+        29,
+        14
+      ],
+      [
+        28,
+        9
+      ],
+      [
+        29,
+        4
+      ]
+    ],
+    [
+      [
+        1087,
+        4189
+      ],
+      [
+        523,
+        -346
+      ]
+    ],
+    [
+      [
+        2289,
+        2478
+      ],
+      [
+        408,
+        -647
+      ]
+    ],
+    [
+      [
+        1365,
+        466
+      ],
+      [
+        452,
+        -466
+      ]
+    ],
+    [
+      [
+        0,
+        5095
+      ],
+      [
+        16,
+        45
+      ],
+      [
+        18,
+        42
+      ],
+      [
+        20,
+        37
+      ],
+      [
+        22,
+        34
+      ],
+      [
+        24,
+        31
+      ],
+      [
+        24,
+        30
+      ],
+      [
+        25,
+        29
+      ],
+      [
+        25,
+        21
+      ],
+      [
+        29,
+        20
+      ],
+      [
+        29,
+        16
+      ],
+      [
+        28,
+        10
+      ],
+      [
+        28,
+        4
+      ],
+      [
+        17,
+        0
+      ],
+      [
+        16,
+        -1
+      ],
+      [
+        17,
+        -3
+      ],
+      [
+        18,
+        -7
+      ],
+      [
+        31,
+        -14
+      ],
+      [
+        32,
+        -21
+      ]
+    ]
+  ],
+  "transform": {
+    "scale": [
+      0.01593567505561735,
+      0.004116004168964415
+    ],
+    "translate": [
+      0.5712890625,
+      26.11598592533351
+    ]
+  },
+  "objects": {
+    "map": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "LineString",
+          "arcs": [
+            0
+          ],
+          "properties": {
+            "name": "romans",
+            "id": "#romansPath",
+            "text": "Les Romains",
+            "section": "(Scouts)",
+            "color": "#590000"
+          }
+        },
+        {
+          "type": "LineString",
+          "arcs": [
+            1
+          ],
+          "properties": {
+            "name": "greeks",
+            "id": "#greeksPath",
+            "text": "Les Grecques",
+            "section": "(Louvettes)",
+            "color": "#073307"
+          }
+        },
+        {
+          "type": "LineString",
+          "arcs": [
+            2
+          ],
+          "properties": {
+            "name": "persians",
+            "id": "#persiansPath",
+            "text": "Les Perses",
+            "section": "(Louveteaux)",
+            "color": "#000050"
+          }
+        },
+        {
+          "type": "LineString",
+          "arcs": [
+            3
+          ],
+          "properties": {
+            "name": "egyptians",
+            "id": "#egyptiansPath",
+            "text": "Les Egyptiens",
+            "section": "(Guides)",
+            "color": "#301402"
+          }
+        },
+        {
+          "type": "LineString",
+          "arcs": [
+            4
+          ],
+          "properties": {
+            "name": "gaulans",
+            "id": "#gaulansPath",
+            "text": "Les Gaulois",
+            "section": "(Baladins)",
+            "color": "#340160"
+          }
+        }
+      ]
+    }
+  }
+}

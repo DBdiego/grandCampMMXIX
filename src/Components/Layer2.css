@@ -1,0 +1,438 @@
+body{
+  background-color: #1B1B1B;
+  font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif;
+}
+
+
+
+
+/* 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++              ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++   COMPUTER   ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++              ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* --------- APP HEADER --------- */
+
+.App-logo {
+  height       : 40px ;
+  width        : 40px ;
+  padding-top  : 10px  ;
+  padding-left : 20px ;
+  padding-right: 10px ;
+  float        : left ;
+  filter       : invert(100%);
+
+}
+
+.PlayButton{
+  height       : 25px ;
+  width        : 25px ;
+  margin-top   : 20px ;
+  margin-left  : calc(90vw - 710px) ; 
+  filter       : invert(90%);
+}
+
+.PlayButton:focus{
+    outline: none ;
+}
+
+.musicTitle{
+  font-size   : 10px   ;
+  margin-top  : 20px   ;
+  margin-left : 0.7vw  ;
+  width       : 12vw   ;
+  color       : #C0C0C0;
+}
+
+
+.PersonalPageHeader {
+  background-color: black               ;
+  opacity         : 0.95                ;
+  height          : 65px                ;
+  width           : 100%                ;
+  color           : black               ;
+  float           : center              ;
+  text-align      : center              ;
+  box-shadow      : 0px 0.51px 3px grey ;
+  position        : fixed               ;
+  z-index         : 5                   ;
+  overflow        : hidden              ;
+}
+
+.PersonalPageHeader ul {
+  list-style-type: none   ;
+  margin         : 0      ;
+  padding        : 0      ;
+  overflow       : hidden ;
+}
+
+.PersonalPageHeader li {
+  float        : left;
+}
+
+
+
+
+.PersonalPageHeader button{
+  float              : left              ; 
+  background-color   : inherit           ;
+  color              : #D5D5D5           ;
+  font-size          : 16px              ;
+  height             : 65px              ;
+  width              : 130px             ;
+  border             : none              ;
+  padding-right      : 12px              ;
+  padding-left       : 12px              ;
+  -webkit-user-select: none              ;
+  user-select        : none              ;
+}
+
+.PersonalPageHeader button:hover{
+  background-color: #5A5A5A ;
+  transition      : 0.6s    ;
+}
+
+.PersonalPageHeader button:focus{
+    outline: none ;
+}
+
+
+
+
+/* =====================  GENERAL  ===================== */
+
+.container{
+  padding-top    : 8vh  ;
+  display        : flex ;
+  flex-direction : row  ;
+  flex-wrap      : wrap ;
+}
+
+.Background img {
+    position  : fixed  ;
+    right     : 0      ;
+    top       : 0      ;
+    width     : 100%   ;
+    height    : auto   ;
+    min-width : 1400px ;
+    z-index   : -5     ;
+    opacity   : 0.7    ;
+}
+
+
+.textBox{
+  color           : white    ;
+  max-width       : 70vw     ; 
+  text-align      : center   ;
+  z-index         : 0        ;
+  opacity         : 0.88     ;
+  margin-top      : 9vh      ;
+  margin-left     : 15vw     ;
+  margin-right    : 15vw     ;
+  border-radius   : 3px      ;
+  padding-left    : 50px     ;
+  padding-right   : 50px     ;
+  padding-top     : 10px     ;
+  padding-bottom  : 30px     ;
+  background-color: #0A0A0A  ;
+}
+
+.textBox .textTitle{
+  color      : #E0E0E0  ;
+  font-size  : 40px     ;
+  font-family: 'Skranji';
+}
+
+.textBox .subtitle{
+  color           : white    ;
+  font-family     : 'Skranji';
+  text-decoration : underline;
+  font-size       : 20px     ;
+}
+
+.textBox .text{
+  color     : #C0C0C0  ;
+  font-size : 18px     ;
+}
+
+.textBox .sideNote{
+  color     : #C0C0C0  ;
+  font-size : 13px     ;
+}
+
+.textBox .signature{
+  font-size       : 25px     ;
+  text-decoration : underline;
+  font-family     : 'Skranji';
+}
+
+.textBox .names{
+  font-size   : 20px     ;
+  font-family : 'Skranji';
+  color       : #858462;/*#394d00;*/
+  font-weight : 100;
+}
+
+.textBox mark{
+  text-decoration: underline ;
+  font-weight    : bold      ;
+  color          : white     ;
+  background     : none      ;
+}
+
+.textBox .warning{
+  color          : #FF1100   ;
+}
+
+.titleBox{
+  color           : white    ;
+  max-width       : 40vw     ; 
+  min-width       : 40vw     ; 
+  max-height      : 10vh     ;
+  text-align      : center   ;
+  z-index         : 0        ;
+  opacity         : 0.88     ;
+  margin-top      : 1.7vh    ;
+  margin-left     : 30vw     ;
+  margin-right    : 30vw     ;
+  border-radius   : 3px      ;
+  background-color: #0A0A0A  ;
+  color           : #E0E0E0  ;
+  font-size       : 30px     ;
+  font-family     : 'Skranji';
+}
+
+
+
+/* =====================  HOME  ===================== */
+
+.Home .textBox{ 
+  animation-name:img-ani;
+  animation-duration: 3s;   
+  animation-timing-function: ease-in;
+}             
+
+@keyframes img-ani {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+/* =====================  Staff  ===================== */
+
+.Staff .textBox{
+  display        : flex   ;
+  flex-wrap      : wrap   ;
+  flex-flow      : column ;
+  opacity        : 0.95   ;
+  width          : 100%   ;
+  justify-content: center ;
+  align-items    : center ;
+}
+
+.Staff .row{
+  display        : flex   ;
+  flex-wrap      : wrap   ;
+  flex-flow      : row    ;
+  justify-content: center ;
+  align-items    : center ; 
+}
+
+
+
+
+.Staff .column1{
+  margin-right:0.5vw;
+
+}
+.Staff .column2{
+  margin-left: 1.5vw ;
+  text-align : start ;
+}
+
+
+.Staff .God{
+  width:20vw;
+  box-shadow: 0px 0px 14px 1px #57636b;
+}
+
+.Staff .Odin{
+  width : 25vw ;
+}
+
+.Staff .Thor{
+  width : 25vw ;
+}
+
+
+/* == Your Viking ==*/
+.YourViking mark{
+  color:rgb(155, 141, 117);/*#6a5742;*/
+  /*color:#6a5742; /**/
+  text-decoration: none;
+}
+
+
+/* =====================  INFO  ===================== */
+
+
+
+
+.Info .download-button{
+  text-decoration  : none;
+  color            : #C0C0C0  ;
+  font-size        : 18px     ;
+  border-radius    : 3px      ;
+  padding          : 10px     ;
+  margin-top       : 3vh      ;
+  margin-right     : 10vw     ;
+  margin-left      : 10vw     ;
+  border           : 1px solid #D0D0D0;
+
+}
+
+.Info .download-button:hover{
+  background-color: #59505E;
+  transition      : 0.6s   ;
+}
+
+.Info a{
+  text-decoration  : none;
+  color            : #C0C0C0  ;
+  display:block;
+}
+
+.Info .bagList{
+  text-align  : start   ;
+  margin-left : 10vw    ;
+  color       : #C0C0C0 ;
+}
+
+
+/* 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++            +++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++   MOBILE   +++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++            +++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+@media (max-width: 850px) {
+    .PersonalPageHeader .App-logo {
+      width          : 50px    ;
+      height         : 50px   ;
+      padding-top    : 5px    ;
+      padding-bottom : 10px   ;
+      text-align     : center ;
+      float          : middle ;
+      align-items    : center ;
+    }
+
+
+    .PersonalPageHeader {
+      background-color: black               ;
+      opacity         : 0.95                ;
+      height          : 280px               ;
+      width           : 100%                ;
+      color           : black               ;
+      float           : center              ;
+      text-align      : center              ;
+      box-shadow      : 0px 0.51px 3px grey ;
+      overflow        : scroll              ;
+      z-index         : 5                   ;
+    }
+
+    .PersonalPageHeader ul {
+      list-style-type: none   ;
+      margin         : 0      ;
+      padding        : 0      ;
+      overflow       : scroll ;
+    }
+
+    .PersonalPageHeader li {
+      float       : center ;
+      align-items : center ;
+      width       : 100%   ;
+    }
+
+
+
+
+    .PersonalPageHeader button{
+      float              : left    ; 
+      background-color   : inherit ;
+      color              : #D5D5D5 ;
+      font-size          : 16px    ;
+      height             : 43px    ;
+      width              : 100%    ;
+      border-top         : 1px solid #5A5A5A ;
+      border-bottom      : 1px solid #5A5A5A ;
+      border-left        : 1px solid black ;
+      border-right       : 1px solid black ;
+      margin-top         : 0px     ;
+      -webkit-user-select: none    ;
+      user-select        : none    ;
+      font-family: arial ;
+
+    }
+
+    .PersonalPageHeader button:hover{
+      background-color: #5A5A5A ;
+      transition      : 0.6s    ;
+    }
+
+    .PersonalPageHeader button:focus{
+        outline: none ;
+    }
+
+    .Background img {
+        position  : fixed  ;
+        left      : -50%   ;
+        top       : 0      ;
+        width     : 100%   ;
+        height    : auto   ;
+        min-width : 1400px ;
+        z-index   : -5     ;
+    }
+
+    .container{
+      padding-top    : 35vh  ;
+      display        : flex ;
+      flex-direction : row  ;
+      flex-wrap      : wrap ;
+    }
+
+
+    .textBox{
+        color           : white    ;
+        max-width       : 70vw     ; 
+        text-align      : center   ;
+        z-index         : 0        ;
+        opacity         : 0.88     ;
+        margin-top      : 5vh      ;
+        margin-left     : 5vw     ;
+        margin-right    : 5vw     ;
+        border-radius   : 3px      ;
+        padding-left    : 50px     ;
+        padding-right   : 50px     ;
+        padding-top     : 10px     ;
+        padding-bottom  : 30px     ;
+        background-color: #0A0A0A  ;
+    }
+
+
+}
+
+
+
+
+
+
+
+
