@@ -1,7 +1,17 @@
 import React, { Component } from 'react'                        ;
-import BackgroundImage      from './Images/Background_Home.jpg' ;
-import Header               from '../General/Header.jsx'                 ;
+import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Home.jpg' ;
+import Header               from '../General/Header.jsx'        ;
 import '../Layer2.css';
+
+
+/*
+                    <div className={'Background'}>
+                        <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
+                    </div>
+*/
+
+
+////GUIDES///
 
 class Home extends Component {
 
@@ -15,43 +25,31 @@ class Home extends Component {
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
                     <div className = 'container'>
-                        <div className='textBox'>
-                            <p className='textTitle'>{`Baladins de la 39ème, Skàl !!!`}</p>
+                        <div className={'textBox '+ section}>
+                            <p className='textTitle'>{`Chers Parents, Chères Guides,`}</p>
 
-                            <p className='text'>{`Les Vikings : une terre, une culture, un monde à part !`}</p>
+                            <p className='text'>{`C'est avec grand plaisir que nous vous dévoilons enfin les informations tant 
+                                attendues quant au grand camp ! `}</p>
                            
-                            <p className='text'>{` Ces guerriers à la férocité légendaire, qui ont fait craindre 
-                                l’Europe jusqu’aux confins de la mer Egée. Leurs exploits sont tels qu’ils ont 
-                                traversé les siècles et les traverseront encore.`
+                            <p className='text'>{`Cette année sera un peu particulière car, comme vous le savez, nous passerons 
+                                un camp d'unité. Baladins, louvettes, louveteaux, scouts et guides seront rassemblés ! 
+                                Pas d'inquiétudes, cela ne change pas grand chose pour vous. Ce sera du fun en plus pour 
+                                les guides et la découverte des autres sections pour tous.`
                                 }</p>
 
-                            <p className='text'>{`Jarls et guerriers, vous trouverez ici quelques-unes des nombreuses 
-                                légendes engendrées par cette civilisation mythique. Vous aurez également 
-                                l’occasion d’en apprendre sur leur culture, leur religion leurs traditions 
-                                mais surtout, sur la personnalité légendaire que vous représenterez, afin de 
-                                vous imprégner des valeurs qu’ils défendaient et ainsi gagner votre place au Valhalla.`
+                            <p className='text'>{`Le thème de ce grand camp d'unité est: "L'Antiquité en Méditerranée". La section 
+                                des guides sera le peuple égyptien. A chaque patrouille sa déesse ! Amour, guerre, nature, mers, natalité, 
+                                surprenez-nous ! Aménagez vos pilotis des plus belles décorations égyptiennes et déguisez-vous selon votre 
+                                thème, nous comptons sur vous pour nous emmener en Egypte durant ces 15 jours.`
                                 }</p>
 
-                            <p className='text'>{`Alors partez explorer ce site, inculquez-vous de ce que vous y trouverez, 
-                                et devenez des vrais Vikings. Et quand ce sera fait, préparez votre paquetage, armez votre 
-                                drakkar, car il vous faudra partir pour une grande et belle expédition qui sera à l’image de 
-                                celle de nos ancêtres, et dont vous en reviendrez changés et émerveillés.`
+                            <p className='text'>{`Nous nous réjouissons de vous retrouver en pleine forme !`
                                 }</p>
 
-                            <p className='signature'>{`Ton Staff`}</p>
-                            <p className='names'>
-                                Sika 
-                                &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Kodiak
-                                &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Margay
-                                &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Goral
-                                &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Lycaon
-                                &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Gibbon</p>
-
+                            <p className='text'>{`Chers parents, nous vous remercions une fois de plus pour la confiance que vous nous 
+                                accordez. Nous restons à votre entière disposition pour toutes questions`
+                            }</p>
+                            <p className='signature'>{`Le Staff Guides 39`}<sup>ième</sup>{` `}</p>
                         </div>
                     </div>
                 </div>

@@ -1,19 +1,11 @@
 import React, { Component } from 'react'                        ;
-import BackgroundImage      from './Images/Background_Home.jpg' ;
+import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Home.jpg' ;
 import Header               from '../General/Header.jsx'        ;
-import TopImage             from './TopImage.jsx'               ;
 import '../Layer2.css';
 
 
-/*
-                    <div className={'Background'}>
-                        <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
-                    </div>
-*/
 
-
-
-
+///SCOUTS///
 class Home extends Component {
 
     render() {
@@ -26,28 +18,28 @@ class Home extends Component {
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
                     <div className = 'container'>
-                        <div className='textBox'>
-                            <p className='textTitle'>{`Scouts de la 39ème, Skàl !!!`}</p>
+                        <div className={'textBox '+ section}>
+                            <p className='textTitle'>{`Speculator, Para Bellum !`}</p>
 
-                            <p className='text'>{`Les Vikings : une terre, une culture, un monde à part !`}</p>
+                            <p className='text'>{`Chères Scouts, cette année, nous vous emmenons dans les grands empires 
+                                de la méditerranée antique. Mais le vôtre n’est autre que celui du glorieux empire romains.`}</p>
                            
-                            <p className='text'>{` Ces guerriers à la férocité légendaire, qui ont fait craindre 
-                                l’Europe jusqu’aux confins de la mer Egée. Leurs exploits sont tels qu’ils ont 
-                                traversé les siècles et les traverseront encore.`
+                            <p className='text'>{`Vous trouverez si dessous l’histoire de vos cités ainsi que l’avènement 
+                                de leur grandeur. Imprégnez-vous de leurs légendes, car durant ce grand camp, ce sera à 
+                                vous d’ajouter une nouvelle page à leurs mémoires.`
                                 }</p>
 
-                            <p className='text'>{`Jarls et guerriers, vous trouverez ici quelques-unes des nombreuses 
-                                légendes engendrées par cette civilisation mythique. Vous aurez également 
-                                l’occasion d’en apprendre sur leur culture, leur religion leurs traditions 
-                                mais surtout, sur la personnalité légendaire que vous représenterez, afin de 
-                                vous imprégner des valeurs qu’ils défendaient et ainsi gagner votre place au Valhalla.`
+                            <p className='text'>{`Vous aurez aussi l’occasion d’en apprendre sur les divinités qui seront 
+                                incarnés par votre staff préféré.`
                                 }</p>
 
-                            <p className='text'>{`Alors partez explorer ce site, inculquez-vous de ce que vous y trouverez, 
-                                et devenez des vrais Vikings. Et quand ce sera fait, préparez votre paquetage, armez votre 
-                                drakkar, car il vous faudra partir pour une grande et belle expédition qui sera à l’image de 
-                                celle de nos ancêtres, et dont vous en reviendrez changés et émerveillés.`
+                            <p className='text'>{`Au-delà de vos querelles à l’intérieur de l’empire vous aurez aussi à défier 
+                                les diverses nations qui bordent vos frontières.`
                                 }</p>
+
+                            <p className='text'>{`Consuls, gouverneurs et tribuns, montrez-vous digne de vos dieux !`
+                                }</p>
+
 
                             <p className='signature'>{`Ton Staff`}</p>
                             <p className='names'>
@@ -55,14 +47,11 @@ class Home extends Component {
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
                                 Kodiak
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Margay
+                                Whypsi
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Goral
+                                Moufflon
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Lycaon
-                                &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Gibbon</p>
-
+                                Goral</p>
                         </div>
                     </div>
                 </div>

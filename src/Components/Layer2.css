@@ -20,14 +20,10 @@ body{
 
 /* --------- APP HEADER --------- */
 
-.App-logo {
-  height       : 40px ;
-  width        : 40px ;
-  padding-top  : 10px  ;
-  padding-left : 20px ;
-  padding-right: 10px ;
+.mapButton img{
+  height       : 65px ;
+  padding      : 0px;
   float        : left ;
-  filter       : invert(100%);
 
 }
 
@@ -45,8 +41,6 @@ body{
 
 .musicTitle{
   font-size   : 10px   ;
-  margin-top  : 20px   ;
-  margin-left : 0.7vw  ;
   width       : 12vw   ;
   color       : #C0C0C0;
 }
@@ -54,13 +48,13 @@ body{
 
 .PersonalPageHeader {
   background-color: black               ;
-  opacity         : 0.95                ;
+  opacity         : 1                   ;
   height          : 65px                ;
   width           : 100%                ;
   color           : black               ;
   float           : center              ;
   text-align      : center              ;
-  box-shadow      : 0px 0.51px 3px grey ;
+  box-shadow      : 0px 0.51px 3px black;
   position        : fixed               ;
   z-index         : 5                   ;
   overflow        : hidden              ;
@@ -80,29 +74,55 @@ body{
 
 
 
-.PersonalPageHeader button{
-  float              : left              ; 
-  background-color   : inherit           ;
-  color              : #D5D5D5           ;
-  font-size          : 16px              ;
-  height             : 65px              ;
-  width              : 130px             ;
-  border             : none              ;
-  padding-right      : 12px              ;
-  padding-left       : 12px              ;
-  -webkit-user-select: none              ;
-  user-select        : none              ;
+.PersonalPageHeader .normalButton{
+  float              : left       ; 
+  background-color   : inherit    ;
+  /*color              : #D5D5D5  ;*/
+  font-size          : 18px       ;
+  height             : 65px       ;
+  width              : 130px      ;
+  border             : none       ;
+  -webkit-user-select: none       ;
+  user-select        : none       ;
+  font-family        : 'Cinzel'   ;
 }
 
-.PersonalPageHeader button:hover{
-  background-color: #5A5A5A ;
+
+
+
+.PersonalPageHeader .normalButton:hover{
+  background-color: #EFEFEF ;
+  opacity: 0.7;
   transition      : 0.6s    ;
 }
 
-.PersonalPageHeader button:focus{
+.PersonalPageHeader .normalButton:focus{
     outline: none ;
 }
 
+
+
+.PersonalPageHeader .mapButton{
+  float              : left       ; 
+  background-color   : #000000    ;
+  font-size          : 18px       ;
+  padding            : 0px        ;
+  border             : none       ;
+  -webkit-user-select: none       ;
+  user-select        : none       ;
+}
+
+
+
+.PersonalPageHeader .mapButton:hover .overlay {
+    background-color: #000000 !important;
+    opacity         : 0.7     ;
+    transition      : 0.6s    ;
+}
+
+.PersonalPageHeader .mapButton:focus{
+    outline: none ;
+}
 
 
 
@@ -134,49 +154,51 @@ body{
   z-index         : 0        ;
   opacity         : 0.88     ;
   margin-top      : 9vh      ;
-  margin-left     : 15vw     ;
-  margin-right    : 15vw     ;
+  margin-left     : 5vw      ;
+  margin-right    : 5vw      ;
   border-radius   : 3px      ;
   padding-left    : 50px     ;
   padding-right   : 50px     ;
   padding-top     : 10px     ;
   padding-bottom  : 30px     ;
   background-color: #0A0A0A  ;
+  box-shadow      : 0px 0.51px 9px black;
+  font-family: 'Cinzel';
 }
 
 .textBox .textTitle{
-  color      : #E0E0E0  ;
+  /*color      : #E0E0E0  ;*/
   font-size  : 40px     ;
-  font-family: 'Skranji';
+  font-family: 'Cinzel';
 }
 
 .textBox .subtitle{
-  color           : white    ;
-  font-family     : 'Skranji';
+  /*color           : white    ;*/
+  font-family     : 'Cinzel';
   text-decoration : underline;
   font-size       : 20px     ;
 }
 
 .textBox .text{
-  color     : #C0C0C0  ;
+  /*color     : #C0C0C0  ;*/
   font-size : 18px     ;
 }
 
 .textBox .sideNote{
-  color     : #C0C0C0  ;
+  /*color     : #C0C0C0  ;*/
   font-size : 13px     ;
 }
 
 .textBox .signature{
   font-size       : 25px     ;
   text-decoration : underline;
-  font-family     : 'Skranji';
+  font-family     : 'Cinzel';
 }
 
 .textBox .names{
   font-size   : 20px     ;
-  font-family : 'Skranji';
-  color       : #858462;/*#394d00;*/
+  font-family : 'Cinzel';
+  /*color       : #858462;*//*#394d00;*/
   font-weight : 100;
 }
 
@@ -198,31 +220,57 @@ body{
   max-height      : 10vh     ;
   text-align      : center   ;
   z-index         : 0        ;
-  opacity         : 0.88     ;
+  opacity         : 0.95     ;
   margin-top      : 1.7vh    ;
   margin-left     : 30vw     ;
   margin-right    : 30vw     ;
   border-radius   : 3px      ;
   background-color: #0A0A0A  ;
-  color           : #E0E0E0  ;
+  /*color           : #E0E0E0  ;*/
   font-size       : 30px     ;
-  font-family     : 'Skranji';
+  font-family     : 'Cinzel';
 }
 
+.scouts{
+  background-color:#B66849;
+  color           :#5D0E0A;
+}
+
+
+.guides{
+  background-color:#AC7D4C;
+  color           :#371A09;
+}
+
+.louveteaux{
+  background-color:#7066AF;
+  color           :#171559;
+}
+
+.louvettes{
+  background-color:#90A058;
+  color           :#10380E;
+}
+
+.baladins{
+  background-color:#A26AAD;
+  color           :401569;
+}
 
 
 /* =====================  HOME  ===================== */
 
 .Home .textBox{ 
   animation-name:img-ani;
-  animation-duration: 3s;   
+  animation-duration: 0.6s;   
   animation-timing-function: ease-in;
 }             
 
 @keyframes img-ani {
   from{opacity:0;}
-  to{opacity: 1;}
+  to{opacity: 0.95;}
 }
+
 
 /* =====================  Staff  ===================== */
 
@@ -259,15 +307,106 @@ body{
 
 .Staff .God{
   width:20vw;
-  box-shadow: 0px 0px 14px 1px #57636b;
+  box-shadow: 0px 0px 14px 1px #000000;
 }
 
-.Staff .Odin{
-  width : 25vw ;
+/* SCOUTS */
+
+
+
+/* GUIDES */
+
+.Staff .Ourebi{
+  width : 10vw ;
 }
 
-.Staff .Thor{
-  width : 25vw ;
+.Staff .Dorcas{
+  width : 10vw ;
+}
+
+.Staff .Spitz{
+  width : 10vw;
+}
+
+.Staff .Welsh{
+  width : 10vw;
+}
+
+.Staff .Merione{
+  width : 10vw;
+}
+
+.Staff .Beira{
+  width : 10vw;
+}
+
+.Staff .Sloughi{
+  width : 10vw;
+}
+
+
+
+/* LOUVETTES */
+.Staff .Zeus{
+  width : 11vw;
+}
+
+.Staff .Athena{
+  width : 12vw;
+}
+
+.Staff .Artemis{
+  width : 12vw;
+}
+
+.Staff .Apollon{
+  width : 13vw;
+}
+
+.Staff .Hades{
+  width : 13vw;
+}
+
+.Staff .Jacques{
+  width : 11vw;
+}
+
+.Staff .Jacques{
+  width : 11vw;
+}
+
+.Staff .Jacques{
+  width : 11vw;
+}
+
+
+/* BALADINS */
+.Staff .Abraracourcix{
+  width : 15vw;
+}
+
+.Staff .Obelix{
+  width : 15vw;
+}
+
+.Staff .Panoramix{
+  width : 15vw;
+}
+
+.Staff .Assurancetourix{
+  width : 15vw;
+}
+
+.Staff .Asterix{
+  width : 15vw;
+}
+
+.Staff .Falbala{
+  width : 15vw;
+}
+
+.Staff .Bonemine{
+  width : 15vw;
 }
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'                         ;
-import BackgroundImage      from './Images/Background_Staff.jpg' ;
+import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Staff.jpg' ;
 import Tyr                  from './Images/Tyr.jpg'              ;
 import Odin                 from './Images/Odin.jpg'             ;
 import Loki                 from './Images/Loki.jpg'             ;
@@ -24,7 +24,7 @@ class Staff extends Component {
 
                     <div className = 'container'>
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
 
                             <div className='row'>
                                 <p className='textTitle'>{`Odin (Margay)`}</p>
@@ -54,7 +54,7 @@ class Staff extends Component {
 
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
 
                             <div className='row'>
                                 <p className='textTitle'>{`Thor (Kodiak)`}</p>
@@ -83,7 +83,7 @@ class Staff extends Component {
 
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
 
                             <div className='row'>
                                 <p className='textTitle'>{`Loki (Lycaon)`}</p>
@@ -120,7 +120,7 @@ class Staff extends Component {
 
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
 
                             <div className='row'>
                                 <p className='textTitle'>{`Mimir (Sika)`}</p>
@@ -150,7 +150,7 @@ class Staff extends Component {
 
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
 
                             <div className='row'>
                                 <p className='textTitle'>{`Tÿr (Gibbon)`}</p>
@@ -182,7 +182,7 @@ class Staff extends Component {
 
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
 
                             <div className='row'>
                                 <p className='textTitle'>{`Magni (Goral)`}</p>

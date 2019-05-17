@@ -10,11 +10,11 @@ import ScoutsKids     from './Scouts/Kids.jsx'    ;
 import ScoutsInfo     from './Scouts/Info.jsx'    ;
 
 //Guides
-import GuidesHome     from './Guides/Home.jsx'    ;
-import GuidesHistory  from './Guides/History.jsx' ;
-import GuidesStaff    from './Guides/Staff.jsx'   ;
-import GuidesKids     from './Guides/Kids.jsx'    ;
-import GuidesInfo     from './Guides/Info.jsx'    ;
+import GuidesHome     from './Guides/Home.jsx'       ;
+import GuidesHistory  from './Guides/Activities.jsx' ;
+import GuidesStaff    from './Guides/Staff.jsx'      ;
+import GuidesKids     from './Guides/Kids.jsx'       ;
+import GuidesInfo     from './Guides/Info.jsx'       ;
 
 //Louveteaux
 import LveauxHome     from './Louveteaux/Home.jsx'    ;
@@ -30,7 +30,7 @@ import LvettesStaff   from './Louvettes/Staff.jsx'   ;
 import LvettesKids    from './Louvettes/Kids.jsx'    ;
 import LvettesInfo    from './Louvettes/Info.jsx'    ;
 
-//Balas
+//Baladins
 import BalasHome      from './Baladins/Home.jsx'    ;
 import BalasHistory   from './Baladins/History.jsx' ;
 import BalasStaff     from './Baladins/Staff.jsx'   ;
@@ -52,7 +52,7 @@ class Routers extends Component{
                 <Route path='/grandcamp39/scouts/info'          component={ScoutsInfo}    />
 
                 <Route path='/grandcamp39/guides/accueil'       component={GuidesHome}    />
-                <Route path='/grandcamp39/guides/histoire'      component={GuidesHistory} />
+                <Route path='/grandcamp39/guides/activites'     component={GuidesHistory} />
                 <Route path='/grandcamp39/guides/staff'         component={GuidesStaff}   />
                 <Route path='/grandcamp39/guides/kids'          component={GuidesKids}    />
                 <Route path='/grandcamp39/guides/info'          component={GuidesInfo}    />

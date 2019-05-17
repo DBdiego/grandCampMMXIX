@@ -1,7 +1,17 @@
 import React, { Component } from 'react'                        ;
-import BackgroundImage      from './Images/Background_Home.jpg' ;
-import Header               from '../General/Header.jsx'                 ;
+import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Home.jpg' ;
+import Header               from '../General/Header.jsx'        ;
 import '../Layer2.css';
+
+
+/*
+                    <div className={'Background'}>
+                        <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
+                    </div>
+*/
+
+
+
 
 class Home extends Component {
 
@@ -15,8 +25,8 @@ class Home extends Component {
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
                     <div className = 'container'>
-                        <div className='textBox'>
-                            <p className='textTitle'>{`Baladins de la 39ème, Skàl !!!`}</p>
+                        <div className={'textBox '+ section}>
+                            <p className='textTitle'>{`Scouts de la 39ème, Skàl !!!`}</p>
 
                             <p className='text'>{`Les Vikings : une terre, une culture, un monde à part !`}</p>
                            

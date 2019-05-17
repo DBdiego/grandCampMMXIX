@@ -1,5 +1,5 @@
 import React, { Component } from 'react'                              ;
-import BackgroundImage      from './Images/Background_YourViking.jpg' ;
+import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_YourViking.jpg' ;
 import logo                 from './logo.svg'                         ;
 import Header               from '../General/Header.jsx'              ;
 import '../Layer2.css';  
@@ -17,7 +17,7 @@ class ScoutsKids extends Component {
                     </div>
 
                     <div className = 'container'>
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Ragnar Lothbrock (Faucons)`}</p>
 
                             <p className='text'>{`Ragnar Lothbrock est un roi légendaire viking du 8`}<sup>eme</sup> {` siècle. Il est 
@@ -71,7 +71,7 @@ class ScoutsKids extends Component {
                         </div>
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Bjorn côte-de-fer (Guépards)`}</p>
 
                             <p className='text'>{`Bjorn est un roi Scandinave du 9`}<sup>eme</sup> {` siècle. Il est le fils du légendaire Ragnar 
@@ -125,7 +125,7 @@ class ScoutsKids extends Component {
                         </div>
 
                         
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Sven à la Barbe Fourchue (Zébus)`}</p>
 
                             <p className='text'>{`Sven à la barbe fourchue ou Sveinn Haraldsson tjúguskegg en Nordique était 
@@ -162,7 +162,7 @@ class ScoutsKids extends Component {
                         </div>
 
                         
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Harald Sigurdsson l’Impitoyable (Sangliers)`}</p>
 
                             <p className='text'>{`Ce roi de Norvège est né en 1016 et mourut le 25 septembre 1066. Il est mieux connu sous 
@@ -226,7 +226,7 @@ class ScoutsKids extends Component {
                         </div>
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Ivar le Desossé (Cobras)`}</p>
 
                             <p className='text'>{`Ivar est le dernier fils de Ragnar Lotbrock. Son surnom, le désossé, revient sur son handicap 

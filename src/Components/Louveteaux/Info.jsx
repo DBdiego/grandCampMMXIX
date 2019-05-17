@@ -1,5 +1,5 @@
 import React, { Component } from 'react'                                        ;
-import BackgroundImage      from './Images/Background_Info.jpg'                 ;
+import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Info.jpg'                 ;
 import autorisation         from './files/Scout_Autorisation_Parentale_2018.pdf';
 import ficheMedicale        from './files/Scout_Fiche_Medicale_2018.pdf'        ;
 import logo                 from './logo.svg'                                   ;
@@ -11,6 +11,38 @@ class Info extends Component {
     render() {
         let splittedAddress = window.location.href.split('/');
         let section = splittedAddress[splittedAddress.length-2];
+
+        let sectionData = {'scouts'    :{'bank'    :'',
+                                         'costs'   :[],
+                                         'email'   :'',
+                                         'schedule':[]
+                                        },
+
+                           'guides'    :{'bank'    :'',
+                                         'costs'   :[],
+                                         'email'   :'',
+                                         'schedule':[]
+                                        },
+
+                           'louveteaux':{'bank'    :'',
+                                         'costs'   :[],
+                                         'email'   :'',
+                                         'schedule':[]
+                                        },
+
+                           'louvettes' :{'bank'    :'',
+                                         'costs'   :[],
+                                         'email'   :'',
+                                         'schedule':[]
+                                        },
+                                        
+                           'baladins'  :{'bank'    :'',
+                                         'costs'   :[],
+                                         'email'   :'',
+                                         'schedule':[]
+                                        }
+        }
+
         let componentsToRender = (
                 <div className='Info'>
                     <Header section={section} logo={logo}/>
@@ -19,7 +51,7 @@ class Info extends Component {
                     </div>
 
                     <div className = 'container'>
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Où?`}</p>
 
                             <p className='text'>{`Cette année, nous partons coloniser Le Bruly ! Ce beau petit bout de terre 
@@ -38,7 +70,7 @@ class Info extends Component {
                         </div>
 
 
-                        <div className='textBox halfPage'>
+                        <div className={'textBox halfPage ' + section}>
                             <p className='textTitle'>{`Quand?`}</p>
 
                             <p className='subtitle'>{`CP's & SP's`}</p>
@@ -66,7 +98,7 @@ class Info extends Component {
 
                         </div>
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Documents à remettre au staff`}</p>
 
                             <p className='text'>{`Deux documents sont à remettre au staff, soit par email à l'adresse habituelle (`}
@@ -97,7 +129,7 @@ class Info extends Component {
                         </div>
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Coût des Activitées`}</p>
 
                             <p className='text'>{`Le prix du camp s'élève pour les CP et SP à €150 tandis qu'il s'élève à €140 euros pour 
@@ -109,7 +141,7 @@ class Info extends Component {
 
                         </div>
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Barbecue parents`}</p>
 
                             <p className='text'>{`Cette année encore, nous vous invitons à venir partager un barbecue avec nous pendant que les
@@ -124,7 +156,7 @@ class Info extends Component {
                         </div>
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Dans Mon Drakkar je mets...`}</p>
 
                             <p className='text'>{`Une telle aventure ne s'entame pas sans être certain de ne manquer de rien. C'est pourquoi, 

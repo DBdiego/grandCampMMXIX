@@ -101,11 +101,11 @@ class RomanEmpireMap extends Component {
 
         //===================================  DATAHANDLING  =================================== 
 
-        let worldmap    = topojson.feature(worldMap       , worldMap.objects.ne_50m_land ).features;
-        let empires     = topojson.feature(Empires        , Empires          .objects.map).features;
-        let empireNames = topojson.feature(empireNamePaths, empireNamePaths  .objects.map).features;
-        let oceanNames  = topojson.feature(oceanNamePaths , oceanNamePaths   .objects.map).features;
-        let radials     = topojson.feature(startingPoints , startingPoints   .objects.map).features;
+        let worldmap    = topojson.feature(worldMap, worldMap.objects.ne_50m_land ).features;
+        let empires     = topojson.feature(Empires, Empires.objects.map).features;
+        let empireNames = topojson.feature(empireNamePaths, empireNamePaths.objects.map).features;
+        let oceanNames  = topojson.feature(oceanNamePaths , oceanNamePaths.objects.map).features;
+        let radials     = topojson.feature(startingPoints , startingPoints.objects.map).features;
 
         //let backgroundOthers = '#A0A0A0' //'#cc9861'
         
@@ -448,6 +448,9 @@ class RomanEmpireMap extends Component {
         empireNamesPaths.selectAll('.empireNamePath')
             .data(empireNames)
                 .attr('d', path)
+                .on('mouseover', MouseOverHandler)
+                .on('mouseout' , MouseOutHandler)
+                .on('click', this.clickHandler);
 
 
 
@@ -458,7 +461,7 @@ class RomanEmpireMap extends Component {
             .append('textPath')
                 .attr('id', (d, i) => 'text_' + d.properties.name)
                 .attr('class', 'empireName')
-                .attr('xlink:href'  , (d, i) => '#'+d.properties.id)
+                .attr('xlink:href'  , (d, i) => '#' + d.properties.id)
                 .style('text-anchor', 'middle' )
                 .attr('startOffset' , '50%'    )
                 .attr('fill'        , (d, i) => d.properties.color )

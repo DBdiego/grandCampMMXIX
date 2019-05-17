@@ -1,5 +1,5 @@
 import React, { Component } from 'react' ;
-import BackgroundImage      from './Images/Background_History.jpg' ;
+import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_History.jpg' ;
 import logo                 from './logo.svg'            ;
 import Header               from '../General/Header.jsx' ;
 import '../Layer2.css';
@@ -16,7 +16,7 @@ class History extends Component {
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
                     <div className = 'container'>
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`L’Age des Vikings (793-1066)`}</p>
 
                             <p className='text'>{`Les Vikings sont des habitants de Scandinavie, isolés du reste 
@@ -104,7 +104,7 @@ class History extends Component {
 
                         </div>
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Habitat`}</p>
 
                             <p className='text'>{`Les Vikings vivent dans des fermes aux bâtiments multiples dont les murs sont en tourbe, 
@@ -124,7 +124,7 @@ class History extends Component {
                                 }</p>
                         </div>
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Les Vêtements`}</p>
 
                             <p className='text'>{`Le Viking porte un pantalon long et flottant; sur la tête un bonnet de feutre ou de laine. 
@@ -133,7 +133,7 @@ class History extends Component {
                            
                         </div>
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Les armes`}</p>
 
                             <p className='text'>{`L'arme favorite des Vikings était la hache qu'ils maniaient avec une grande dextérité; 
@@ -148,7 +148,7 @@ class History extends Component {
                         </div>
 
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Vie pratique : une année`}</p>
 
                             <p className='text'>{`L'année débute avec le mois d'avril, le mois du coucou, des semailles. Il faut aussi couper 
@@ -171,7 +171,7 @@ class History extends Component {
 
                         </div>
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`La femme et l'enfant`}</p>
 
                             <p className='text'>{`La femme accouche en position accroupie ou à genoux ; l'enfant à sa naissance est aspergé 
@@ -191,7 +191,7 @@ class History extends Component {
 
                         </div>
 
-                        <div className='textBox'>
+                        <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Le Mariage`}</p>
 
                             <p className='text'>{`Le mariage est le plus important dans la vie sociale des Vikings, où les liens du sang 
