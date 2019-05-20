@@ -17,7 +17,7 @@ class Home extends Component {
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
-                    <div className = 'container'>
+                    <div className = 'container containerScout'>
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Speculator, Para Bellum !`}</p>
 

@@ -4,7 +4,7 @@ import MapIcon              from './MapIcon.png'    ;
 import Button               from './Button.jsx'     ;
 import '../Layer2.css';  
 
-class HeaderScouts extends Component {
+class Header extends Component {
     constructor(props) {
         super(props);
 
@@ -12,9 +12,9 @@ class HeaderScouts extends Component {
         let sectionData={'scouts'    :[{'buttonName'  : 'ACCEUIL'                   ,
                                         'section'     : 'scouts'                    ,
                                         'link'        : baseLink+'/scouts/accueil' },
-                                        {'buttonName' : 'HISTOIRE'                  ,
+                                        /*{'buttonName' : 'HISTOIRE'                  ,
                                         'section'     : 'scouts'                    ,
-                                        'link'        : baseLink+'/scouts/histoire'},
+                                        'link'        : baseLink+'/scouts/histoire'},*/
                                         {'buttonName' : 'TON STAFF'                 ,
                                         'section'     : 'scouts'                    ,
                                         'link'        : baseLink+'/scouts/staff'   },
@@ -86,7 +86,9 @@ class HeaderScouts extends Component {
                          };
 
         this.state = {section:'',
-                      sectionData:sectionData};
+                      sectionData:sectionData,
+                      menuStatus:'Hidden'};
+        this.someFunction = this.someFunction.bind(this)
     };
 
     componentDidMount() {
@@ -97,11 +99,20 @@ class HeaderScouts extends Component {
         this.setState({section:this.props.section});
     }
 
+    someFunction(){
+        if (this.state.menuStatus === 'Hidden'){
+            this.setState({menuStatus:''})
+        }else{
+            this.setState({menuStatus:'Hidden'})
+        }
+        
+    }
     render() {
 
 
         let ButtonList = (this.state.sectionData[this.state.section]).map(function(element, index){
             return (<Button
+                key        = {index}
                 buttonName = {element.buttonName}
                 section    = {element.section}
                 link       = {element.link}
@@ -109,27 +120,59 @@ class HeaderScouts extends Component {
           });
 
         let componentsToRender = (
-                <header className={'PersonalPageHeader '+ this.state.section}>
-                    <ul>
-                        <li>
-                            <Link to={'/grandcamp39/carte'} >
-                                <button type='button' className={'mapButton'}>
-                                    <div className='overlay'>
-                                        <img src={MapIcon} alt='logo' />
-                                    </div>
-                                </button>
-                            </Link>
-                        </li>
-                        {ButtonList}
-                    </ul>
-                </header>
+                <div>
+                    <header className={'PersonalPageHeader '+ this.state.section}>
+                        <ul>
+                            <li>
+                                <Link to={'/grandcamp39/carte'} >
+                                    <button type='button' className={'mapButton'}>
+                                        <div className='overlay'>
+                                            <img src={MapIcon} alt='carte' />
+                                        </div>
+                                    </button>
+                                </Link>
+                            </li>
+                            {ButtonList}
+                        </ul>
+                    </header>
+
+                    <header className={'PersonalPageHeaderSmall '+ this.state.section}>
+                        <div className='MainMenu'>
+                            <ul>
+                                <li>
+                                    <Link to={'/grandcamp39/carte'} >
+                                        <button type='button' className={'mapButton'}>
+                                            <div className='overlay'>
+                                                <img src={MapIcon} alt='carte' />
+                                            </div>
+                                        </button>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <button 
+                                        type='button' 
+                                        className={'normalButton MenuButton' + this.props.section}
+                                        onClick={this.someFunction}>
+                                        {'MENU'}
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className={'SubMenu'+this.state.menuStatus}>
+                            <ul>
+                                {ButtonList}
+                            </ul>
+                        </div>
+                    </header>
+                </div>
             );
         return componentsToRender
 
     };
 };
 
-export default HeaderScouts
+export default Header
 
 
 

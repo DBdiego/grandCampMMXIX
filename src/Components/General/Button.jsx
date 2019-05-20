@@ -1,18 +1,9 @@
 import React, { Component } from 'react'            ;
 import {Link}               from 'react-router-dom' ;
-import '../Layer2.css';  
-
-/*
-                        <li>
-                            <img src={this.props.logo} className = 'App-logo' alt='logo' />
-                        </li>
-*/
 
 
 class HeaderScouts extends Component {
-    constructor(props) {
-        super(props);
-    };
+
     render() {
         let componentsToRender = (
                         <li>

@@ -1,7 +1,6 @@
-import React, { Component } from 'react'                              ;
-import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_YourViking.jpg' ;
-import logo                 from './logo.svg'                         ;
-import Header               from '../General/Header.jsx'              ;
+import React, { Component } from 'react'                   ;
+import BackgroundImage      from './Images/Background.jpg' ;
+import Header               from '../General/Header.jsx'   ;
 import '../Layer2.css';  
 
 class LouvettesKids extends Component {
@@ -11,7 +10,11 @@ class LouvettesKids extends Component {
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='YourViking'>
-                    <Header section={section} logo={logo}/>
+                    
+                    <Header 
+                        section = {section} 
+                    />
+                    
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
@@ -283,10 +286,32 @@ class LouvettesKids extends Component {
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Corinthe (Verts)`}</p>
 
-                            <p className='text'>{``
+                            <p className='text'>{`La Corinthe est une ville importante car elle contient un port. Avant cette ville antique était l’une des 
+                                plus importante cités de la Grèce antique. Celle-ci abritait Aphrodite, la déesse de l’amour. Elle est située dans les terres 
+                                au pied de son acropole. Elle joua un rôle important dans le monde Mycénien. Elle fut la ville la plus puissante après Sparte 
+                                et surtout la plus peuplée et la plus riche. Elle dut sa fortune à sa position dans le  monde  marchand. Car Corinthe contrôlait 
+                                la partie de terre qui reliais le Péloponnèse à l’ Hellade (le reste de la Grèce). Les corinthiens avaient construits deux ports 
+                                artificiels ; `
                                 }</p>
                             
-                            <p className='text'>{``
+                            <p className='text'>{`Léchée et Cenchréess. Ceux-ci leurs offraient une situation stratégique en terme militaire mais aussi 
+                                commercial car ils se situaient entre deux axes commerciaux, Nord-Sud et Est-Ouest. Sa région était fertile et il y était 
+                                cultivé de la vigne et des oliviers. Corinthe était aussi une ville industrielle réputée pour ses fabriques de produits de 
+                                luxe.`
+                                }</p>
+                            
+                            <p className='text'>{`Selon le mythe hellénique, Corinthe, un descendant du Dieu Hélios (le Soleil), est associé à Sisyphe le fils 
+                                d'Éole et d'Énarété, et il fut le fondateur mythique de la ville.`
+                                }</p>
+                            
+                            <p className='text'>{`Selon un autre mythe venant de Pausanias (Géographe Grec, v.115-v.180), Briarée (Un des trois géants à cent 
+                                mains), un des Hécatonchires, fut l'arbitre dans une dispute entre Poséidon et Hélios. Le verdict de Briarée décida que l'isthme 
+                                de Corinthe appartiendrait à Poséidon et l'acropole de Corinthe, à Hélios. Ainsi, les Grecs représentèrent un culte archaïque 
+                                du soleil dans la partie haute du site de l'acropole. `
+                                }</p>
+                            
+                            <p className='text'>{`Un autre mythe explique que Sisyphe rapporta au Dieu Asopos (Dieu des fleuve) sa fille Égine que Zeus avait 
+                                enlevé. En récompense, Asopos fit couler l'eau qui alimentait la fontaine Pirène située dans les murs de l'Acropole.`
                                 }</p>
                         </div>
 

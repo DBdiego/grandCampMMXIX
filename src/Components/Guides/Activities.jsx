@@ -1,7 +1,6 @@
-import React, { Component } from 'react' ;
-import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_History.jpg' ;
-import logo                 from './logo.svg'            ;
-import Header               from '../General/Header.jsx' ;
+import React, { Component } from 'react'                   ;
+import BackgroundImage      from './Images/Background.jpg' ;
+import Header               from '../General/Header.jsx'   ;
 import '../Layer2.css';
 
 class History extends Component {
@@ -11,7 +10,11 @@ class History extends Component {
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='History'>
-                    <Header section={section} logo={logo}/>
+
+                    <Header 
+                        section = {section}
+                    />
+                    
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>

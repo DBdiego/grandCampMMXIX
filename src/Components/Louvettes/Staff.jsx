@@ -5,9 +5,12 @@ import Athena               from './Images/Athena.jpg'     ;
 import Artemis              from './Images/Artemis.jpg'    ;
 import Apollon              from './Images/Apollon.jpg'    ;
 import Hades                from './Images/Hades.jpg'      ;
+import Dionysos             from './Images/Dionysos.jpg'   ;
+import Circe                from './Images/Circe.jpg'      ;
+import Chloris              from './Images/Chloris.jpg'    ;
+import Heracles             from './Images/Heracles.jpg'   ;
 
 import Header               from '../General/Header.jsx'   ;
-import logo                 from './logo.svg'              ;
 import '../Layer2.css';
 
 
@@ -19,7 +22,11 @@ class StaffLouvettes extends Component {
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='Staff'>
-                    <Header section={section} logo={logo}/>
+
+                    <Header 
+                        section = {section}
+                    />
+                    
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
@@ -123,7 +130,7 @@ class StaffLouvettes extends Component {
                         <div className={'textBox '+ section}>
 
                             <div className='row'>
-                                <p className='textTitle'>{`Hadès (Ferao)`}</p>
+                                <p className='textTitle'>{`Hades (Ferrao)`}</p>
                             </div>
 
                             <div className='row'>
@@ -131,12 +138,42 @@ class StaffLouvettes extends Component {
                                     <img src={Hades} className = 'God Hades' alt='' />
                                 </div>
                                 <div className='column2'>
-                                    <p className='text'>{`Hadès où Ferao est le dieu des enfers et de la richesse. Il est le frère aîné de Zeus et 
-                                        de Poséidon. Comme Zeus gouverne le Ciel et Poséidon la Mer, Hadès règne sous la terre et pour cette raison 
-                                        il est souvent considéré comme le « maître des Enfers. Il reçoit des Cyclopes la kunée, un casque merveilleux 
-                                        qui le rend invisible, alors que Zeus reçoit le foudre et Poséidon le trident. Il est donc le seul dieu pouvant 
-                                        être invisible aux yeux des autres.  C’est d’ailleurs lui qui ouvrira le ventre de son père Cronos pour libérer 
-                                        ses frères et sœurs qui avaient tous grandis dans l’estomac de leur père`
+                                    <p className='text'>{`Hadès où Ferao est le dieu des enfers et de la richesse. Il est le frère aîné de Zeus et de Poséidon. 
+                                        Comme Zeus gouverne le Ciel et Poséidon la Mer, Hadès règne sous la terre et pour cette raison il est souvent considéré 
+                                        comme le « maître des Enfers. Il reçoit des Cyclopes la kunée, un casque merveilleux qui le rend invisible, alors que 
+                                        Zeus reçoit le foudre et Poséidon le trident. Il est donc le seul dieu pouvant être invisible aux yeux des autres. 
+                                        C’est d’ailleurs lui qui ouvrira le ventre de son père Cronos pour libérer ses frères et sœurs qui avaient tous grandis 
+                                        dans l’estomac de leur père`
+                                        }</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div className={'textBox '+ section}>
+
+                            <div className='row'>
+                                <p className='textTitle'>{`Circé (Raksha)`}</p>
+                            </div>
+
+                            <div className='row'>
+                                <div className='column1'>
+                                    <img src={Circe} className = 'God Circe' alt='' />
+                                </div>
+                                <div className='column2'>
+                                    <p className='text'>{`Circé est dans la mythologie grecque, la fille du dieu du Soleil, Helios. `
+                                        }</p>
+
+                                    <p className='text'>{`Son nom signifie « oiseau de proie ». C’est une déesse très puissante dotée 
+                                        de nombreaux pouvoirs extraordinaires. Elle est célèbre pour son art de l’empoisonnement et est 
+                                        capable de métamorphoser n’importe quel humain en animal grâce à ses poisons. Celle-ci est redoutable 
+                                        tant pour sa beauté que pour ses sortilèges. `
+                                        }</p>
+
+                                    <p className='text'>{`Circé épouse le roi des Sarmates, puis l’empoisonne. Elle prend alors la fuite sur 
+                                        le char de son père et s’installe dans un magnifique palais entouré de lions et de loups (Ces animaux 
+                                        sont des voyageurs qu’elle a transformés) sur une île où elle perfectionne ses pouvoirs.`
                                         }</p>
                                 </div>
                             </div>
@@ -144,6 +181,92 @@ class StaffLouvettes extends Component {
 
                             </div>
                         </div>
+
+
+
+                        <div className={'textBox '+ section}>
+
+                            <div className='row'>
+                                <p className='textTitle'>{`Dionysos (Kaa)`}</p>
+                            </div>
+
+                            <div className='row'>
+                                <div className='column1'>
+                                    <img src={Dionysos} className = 'God Dionysos' alt='' />
+                                </div>
+                                <div className='column2'>
+                                    <p className='text'>{`Dionysos est le dieu de la fête, de l’excès et des veillées, en quelque sorte le dieu 
+                                        de l’ambiance. Celui-ci est le fils de Perséphone et Zeus. Héra, jalouse, demande aux Titans de se débarrasser 
+                                        du nouveau-né. Ceux-ci coupent donc Dionysos en morceaux et le font cuire dans une marmite. Athéna ramasse pourtant 
+                                        son cœur et le donne à Zeus qui en féconde à nouveau Dionysos. Pour le soustraire à la vengeance d’Héra, Dionysos 
+                                        est alors remis aux nymphes où ils l’élevèrent. Pour échapper à Héra, il est transformé en chevreau. Après son exil, 
+                                        il retrouve sa force et devient le grand dieu Dionysos. Son pouvoir a donné naissance à la tragédie et à la comédie. 
+                                        C’est par ses illustrations que le théâtre Grec vit jour. En quelques sortes il est à l’origine de vos veillées.`
+                                        }</p>
+                                </div>
+                            </div>
+                            <div className='row'>
+
+                            </div>
+                        </div>
+
+
+                        <div className={'textBox '+ section}>
+
+                            <div className='row'>
+                                <p className='textTitle'>{`Chloris (Baloo)`}</p>
+                            </div>
+
+                            <div className='row'>
+                                <div className='column1'>
+                                    <img src={Chloris} className = 'God Chloris' alt='' />
+                                </div>
+                                <div className='column2'>
+                                    <p className='text'>{`Chloris est une nymphe des Îles Fortunées. Son nom est un dérivé du mot chlorophylle. Elle est l’épouse 
+                                        de Zéphir. Il la conserva dans l’éclat de la jeunesse et lui donnant l’empire des fleurs. Leur hymen se célébra au 
+                                        mois de mai. Ils eurent un fils, Carpos, le dieu des fruits.`
+                                        }</p>
+
+                                    <p className='text'>{`Chloris est la  fille d’Océan et thétys, qui règnent sur le monde des eaux. Ensemble ils engendrent 3000 
+                                        fleuves et 3000 océanides (nymphes des océans). Chloris aurait pu devenir une de ces belles océanides, mais son père la 
+                                        conçoit avec une mortelle. Elle ne veillera donc pas sur l’élément de la vie, l’eau, comme ces demi-sœurs, mais sur les 
+                                        Îles Fortunées. C’est sur ces bouts de terre que séjournent les âmes vertueuses après la mort, notamment celles des héros.`
+                                        }</p>
+
+                                    <p className='text'>{`Tout change le jour où Zéphyr, le Vent de l’Ouest, souffle sur les îles Fortunées et aperçoit la nymphe. 
+                                        Le souffle coupé par sa beauté, le dieu est frappé en plein cœur. Lui qui demeure d’habitude si doux, prend l’exemple de 
+                                        son frère Borée, le rustre et froid Vent du Nord, et enlève Chloris, l’emmenant dans les airs.`
+                                        }</p>
+                                </div>
+                            </div>
+                            <div className='row'>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div className={'textBox '+ section}>
+
+                            <div className='row'>
+                                <p className='textTitle'>{`Heracles (Hathi)`}</p>
+                            </div>
+
+                            <div className='row'>
+                                <div className='column1'>
+                                    <img src={Heracles} className = 'God Heracles' alt='' />
+                                </div>
+                                <div className='column2'>
+                                    <p className='text'>{``
+                                        }</p>
+                                </div>
+                            </div>
+                            <div className='row'>
+
+                            </div>
+                        </div>
+
 
 
 
@@ -157,10 +280,6 @@ class StaffLouvettes extends Component {
 };
 
 export default StaffLouvettes
-
-
-
-
 
 
 

@@ -107,32 +107,39 @@ class RomanEmpireMap extends Component {
         let oceanNames  = topojson.feature(oceanNamePaths , oceanNamePaths.objects.map).features;
         let radials     = topojson.feature(startingPoints , startingPoints.objects.map).features;
 
-        //let backgroundOthers = '#A0A0A0' //'#cc9861'
+        //let backgroundOthers = '#cc9861' //'#cc9861'
+        
         
         let empireColors = {'romans'    : {'initial' : '#A2412B' ,
                                            'selected': '#8B0000'},
+
                             'greeks'    : {'initial' : '#68923F' ,
                                            'selected': '#257025'},
+
                             'persians'  : {'initial' : '#3B38C4' ,
                                            'selected': '#000099'},
+
                             'egyptians' : {'initial' : '#9F6934' ,
                                            'selected': '#72340D'},
+
                             'gaulans'   : {'initial' : '#843EC1' ,
                                            'selected': '#630CAF'}};
         
-
+        
+        
         /*
-        let empireColors = {'romans'    : {'initial' : '#a2412b',
+        let empireColors = {'romans'    : {'initial' : backgroundOthers,//'#a2412b',
                                            'selected': '#8b0000'},
-                            'greeks'    : {'initial' :  backgroundOthers,//'#68923f',
+                            'greeks'    : {'initial' : backgroundOthers,//'#68923f',
                                            'selected': '#257025'},
-                            'persians'  : {'initial' :  backgroundOthers,//'#3b38c4',
+                            'persians'  : {'initial' : backgroundOthers,//'#3b38c4',
                                            'selected': '#000099'},
                             'egyptians' : {'initial' :  backgroundOthers,//'#9f6934',
                                            'selected': '#72340d'},
-                            'gaulans'   : {'initial' :  backgroundOthers,//'#843ec1',
+                            'gaulans'   : {'initial' : '#843ec1',
                                            'selected': '#630caf'}};
         */
+        
 
     
         let widthRoseDesVents  = parseFloat(d3.selectAll('.roseDesVents').style('width').replace('px', ''));
@@ -161,8 +168,6 @@ class RomanEmpireMap extends Component {
 
             });
         };
-
-
 
 
         // =========================================== CANVAS ===========================================
@@ -458,14 +463,14 @@ class RomanEmpireMap extends Component {
         empireNamesTexts.selectAll('.empireName')
             .data(empireNames)
             .enter().append('text')
-            .append('textPath')
-                .attr('id', (d, i) => 'text_' + d.properties.name)
-                .attr('class', 'empireName')
-                .attr('xlink:href'  , (d, i) => '#' + d.properties.id)
-                .style('text-anchor', 'middle' )
-                .attr('startOffset' , '50%'    )
-                .attr('fill'        , (d, i) => d.properties.color )
-                .text((d, i) => d.properties.text);
+                .append('textPath')
+                    .attr('id', (d, i) => 'text_' + d.properties.name)
+                    .attr('class', 'empireName')
+                    .attr('xlink:href'  , (d, i) => '#' + d.properties.id)
+                    .style('text-anchor', 'middle' )
+                    .attr('startOffset' , '50%'    )
+                    .attr('fill'        , (d, i) => d.properties.color )
+                    .text((d, i) => d.properties.text);
 
         // Removing Surplus Empires
         empireNamesTexts.selectAll('.empireName')

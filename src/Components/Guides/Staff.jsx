@@ -8,7 +8,6 @@ import Merione              from './Images/Merione.png'    ;
 import Beira                from './Images/Beira.png'      ;
 import Sloughi              from './Images/Sloughi.png'    ;
 import Header               from '../General/Header.jsx'   ;
-import logo                 from './logo.svg'              ;
 import '../Layer2.css';
 
 class StaffGuides extends Component {
@@ -18,7 +17,11 @@ class StaffGuides extends Component {
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='Staff'>
-                    <Header section={section} logo={logo}/>
+                
+                    <Header 
+                        section = {section} 
+                    />
+                    
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>

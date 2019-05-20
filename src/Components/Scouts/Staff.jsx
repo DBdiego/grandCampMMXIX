@@ -1,23 +1,26 @@
-import React, { Component } from 'react'                         ;
-import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Staff.jpg' ;
-import Tyr                  from './Images/Tyr.jpg'              ;
-import Odin                 from './Images/Odin.jpg'             ;
-import Loki                 from './Images/Loki.jpg'             ;
-import Thor                 from './Images/Thor.jpg'             ;
-import Magni                from './Images/Magni.jpg'            ;
-import Mimir                from './Images/Mimir.jpg'            ;
-import Header               from '../General/Header.jsx'         ;
-import logo                 from './logo.svg'            ;
+import React, { Component } from 'react'                   ;
+import BackgroundImage      from './Images/Background.jpg' ;
+import Tyr                  from './Images/Tyr.jpg'        ;
+import Odin                 from './Images/Odin.jpg'       ;
+import Loki                 from './Images/Loki.jpg'       ;
+import Thor                 from './Images/Thor.jpg'       ;
+import Magni                from './Images/Magni.jpg'      ;
+import Mimir                from './Images/Mimir.jpg'      ;
+import Header               from '../General/Header.jsx'   ;
 import '../Layer2.css';
 
-class Staff extends Component {
+class StaffScout extends Component {
 
     render() {
         let splittedAddress = window.location.href.split('/');
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='Staff'>
-                    <Header section={section} logo={logo}/>
+
+                    <Header 
+                        section = {section}
+                    />
+
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
@@ -218,7 +221,7 @@ class Staff extends Component {
     };
 };
 
-export default Staff
+export default StaffScout
 
 
 

@@ -20,11 +20,14 @@ class Home extends Component {
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='Home'>
-                    <Header section={section}/>
+                    <Header 
+                        section = {section}
+                    />
+                    
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
-                    <div className = 'container'>
+                    <div className = 'container containerLouveteaux'>
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`سلام à toi, guérier Perse!!!`}</p>
 

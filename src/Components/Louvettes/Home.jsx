@@ -1,14 +1,7 @@
-import React, { Component } from 'react'                        ;
-import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Home.jpg' ;
-import Header               from '../General/Header.jsx'        ;
+import React, { Component } from 'react'                   ;
+import BackgroundImage      from './Images/Background.jpg' ;
+import Header               from '../General/Header.jsx'   ;
 import '../Layer2.css';
-
-
-/*
-                    <div className={'Background'}>
-                        <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
-                    </div>
-*/
 
 
 /////LOUVETEAUX////////
@@ -20,10 +13,15 @@ class Home extends Component {
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='Home'>
-                    <Header section={section}/>
+
+                    <Header 
+                        section={section}
+                    />
+                    
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
+                    
                     <div className = 'container'>
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Bienvenue à vous!`}</p>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'                         ;
-import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Staff.jpg' ;
+import BackgroundImage      from './Images/Background.jpg'       ;
 import Abraracourcix        from './Images/Abraracourcix.jpg'    ;
 import Obelix               from './Images/Obelix.jpg'           ;
 import Panoramix            from './Images/Panoramix.jpg'        ;
@@ -8,7 +8,6 @@ import Asterix              from './Images/Asterix.jpg'          ;
 import Falbala              from './Images/Falbala.jpg'          ;
 import Bonemine             from './Images/Bonemine.jpg'         ;
 import Header               from '../General/Header.jsx'         ;
-import logo                 from './logo.svg'            ;
 import '../Layer2.css';
 
 
@@ -20,7 +19,11 @@ class StaffBaladins extends Component {
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='Staff'>
-                    <Header section={section} logo={logo}/>
+                    
+                    <Header 
+                        section = {section}
+                    />
+
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>

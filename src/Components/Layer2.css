@@ -47,7 +47,6 @@ body{
 
 
 .PersonalPageHeader {
-  background-color: black               ;
   opacity         : 1                   ;
   height          : 65px                ;
   width           : 100%                ;
@@ -77,7 +76,6 @@ body{
 .PersonalPageHeader .normalButton{
   float              : left       ; 
   background-color   : inherit    ;
-  /*color              : #D5D5D5  ;*/
   font-size          : 18px       ;
   height             : 65px       ;
   width              : 130px      ;
@@ -102,7 +100,7 @@ body{
 
 
 
-.PersonalPageHeader .mapButton{
+.mapButton{
   float              : left       ; 
   background-color   : #000000    ;
   font-size          : 18px       ;
@@ -124,22 +122,32 @@ body{
     outline: none ;
 }
 
-
+.PersonalPageHeaderSmall{
+  display: none;
+}
 
 /* =====================  GENERAL  ===================== */
 
 .container{
-  padding-top    : 8vh  ;
+  padding-top    : 12vh  ;
   display        : flex ;
   flex-direction : row  ;
   flex-wrap      : wrap ;
+}
+
+.containerScout{
+  padding-top: 17vh;
+}
+
+.containerLouveteaux{
+  padding-top: 25vh;
 }
 
 .Background img {
     position  : fixed  ;
     right     : 0      ;
     top       : 0      ;
-    width     : 100%   ;
+    width     : 110%   ;
     height    : auto   ;
     min-width : 1400px ;
     z-index   : -5     ;
@@ -147,13 +155,60 @@ body{
 }
 
 
+
+
+.textBox .textTitle{
+  font-size  : calc(20px + 12 * ((100vw) / (1440)));
+  font-family: 'Cinzel';
+}
+
+.textBox .subtitle{
+  font-family     : 'Cinzel';
+  text-decoration : underline;
+  font-size       : calc(9px + 12 * ((100vw) / (1440)));
+}
+
+.textBox .text{
+  font-size : calc(6px + 12 * ((100vw) / (1440)));
+}
+
+.textBox .sideNote{
+  font-size : calc(8px + 12 * ((100vw) / (1440)));
+}
+
+.textBox .signature{
+  font-size       : calc(9px + 12 * ((100vw) / (1440)));
+  text-decoration : underline;
+  font-family     : 'Cinzel';
+}
+
+.textBox .names{
+  font-size   :  calc(7px + 12 * ((100vw) / (1440)));
+  font-family : 'Cinzel';
+  /*color       : #858462;*//*#394d00;*/
+  font-weight : 100;
+}
+
+.textBox mark{
+  text-decoration: underline ;
+  font-weight    : bold      ;
+  color          : #E0E0E0   ;
+  background     : none      ;
+}
+
+.textBox .warning{
+  color          : #FF1100   ;
+}
+
+
+
 .textBox{
   color           : white    ;
-  max-width       : 70vw     ; 
+  /*max-width       : 70vw     ; */
   text-align      : center   ;
   z-index         : 0        ;
-  opacity         : 0.88     ;
-  margin-top      : 9vh      ;
+  opacity         : 0.95     ;
+  margin-bottom   : 9vh      ;
   margin-left     : 5vw      ;
   margin-right    : 5vw      ;
   border-radius   : 3px      ;
@@ -163,100 +218,8 @@ body{
   padding-bottom  : 30px     ;
   background-color: #0A0A0A  ;
   box-shadow      : 0px 0.51px 9px black;
-  font-family: 'Cinzel';
+  font-family     : 'Cinzel' ;
 }
-
-.textBox .textTitle{
-  /*color      : #E0E0E0  ;*/
-  font-size  : 40px     ;
-  font-family: 'Cinzel';
-}
-
-.textBox .subtitle{
-  /*color           : white    ;*/
-  font-family     : 'Cinzel';
-  text-decoration : underline;
-  font-size       : 20px     ;
-}
-
-.textBox .text{
-  /*color     : #C0C0C0  ;*/
-  font-size : 18px     ;
-}
-
-.textBox .sideNote{
-  /*color     : #C0C0C0  ;*/
-  font-size : 13px     ;
-}
-
-.textBox .signature{
-  font-size       : 25px     ;
-  text-decoration : underline;
-  font-family     : 'Cinzel';
-}
-
-.textBox .names{
-  font-size   : 20px     ;
-  font-family : 'Cinzel';
-  /*color       : #858462;*//*#394d00;*/
-  font-weight : 100;
-}
-
-.textBox mark{
-  text-decoration: underline ;
-  font-weight    : bold      ;
-  color          : white     ;
-  background     : none      ;
-}
-
-.textBox .warning{
-  color          : #FF1100   ;
-}
-
-.titleBox{
-  color           : white    ;
-  max-width       : 40vw     ; 
-  min-width       : 40vw     ; 
-  max-height      : 10vh     ;
-  text-align      : center   ;
-  z-index         : 0        ;
-  opacity         : 0.95     ;
-  margin-top      : 1.7vh    ;
-  margin-left     : 30vw     ;
-  margin-right    : 30vw     ;
-  border-radius   : 3px      ;
-  background-color: #0A0A0A  ;
-  /*color           : #E0E0E0  ;*/
-  font-size       : 30px     ;
-  font-family     : 'Cinzel';
-}
-
-.scouts{
-  background-color:#B66849;
-  color           :#5D0E0A;
-}
-
-
-.guides{
-  background-color:#AC7D4C;
-  color           :#371A09;
-}
-
-.louveteaux{
-  background-color:#7066AF;
-  color           :#171559;
-}
-
-.louvettes{
-  background-color:#90A058;
-  color           :#10380E;
-}
-
-.baladins{
-  background-color:#A26AAD;
-  color           :401569;
-}
-
 
 /* =====================  HOME  ===================== */
 
@@ -318,29 +281,70 @@ body{
 
 .Staff .Ourebi{
   width : 10vw ;
+  min-width: 140px;
 }
 
 .Staff .Dorcas{
   width : 10vw ;
+  min-width: 140px;
 }
 
 .Staff .Spitz{
   width : 10vw;
+  min-width: 140px;
 }
 
 .Staff .Welsh{
   width : 10vw;
+  min-width: 140px;
 }
 
 .Staff .Merione{
   width : 10vw;
+  min-width: 140px;
 }
 
 .Staff .Beira{
   width : 10vw;
+  min-width: 140px;
 }
 
 .Staff .Sloughi{
+  width : 10vw;
+  min-width: 140px;
+}
+
+
+/* LOUVETEAUX */
+.Staff .Akela{
+  width : 10vw;
+}
+
+.Staff .Rikki{
+  width : 10vw;
+}
+
+.Staff .WonTola{
+  width : 10vw;
+}
+
+.Staff .Hati{
+  width : 10vw;
+}
+
+.Staff .Rama{
+  width : 10vw;
+}
+
+.Staff .Kaa{
+  width : 10vw;
+}
+
+.Staff .KalaNag{
+  width : 10vw;
+}
+
+.Staff .Chill{
   width : 10vw;
 }
 
@@ -367,16 +371,20 @@ body{
   width : 13vw;
 }
 
-.Staff .Jacques{
-  width : 11vw;
+.Staff .Circe{
+  width : 13vw;
 }
 
-.Staff .Jacques{
-  width : 11vw;
+.Staff .Dionysos{
+  width : 17vw;
 }
 
-.Staff .Jacques{
-  width : 11vw;
+.Staff .Chloris{
+  width : 15vw;
+}
+
+.Staff .Heracles{
+  width : 13vw;
 }
 
 
@@ -412,8 +420,7 @@ body{
 
 /* == Your Viking ==*/
 .YourViking mark{
-  color:rgb(155, 141, 117);/*#6a5742;*/
-  /*color:#6a5742; /**/
+  color: #D8D8D8;
   text-decoration: none;
 }
 
@@ -422,35 +429,36 @@ body{
 
 
 
-
 .Info .download-button{
-  text-decoration  : none;
-  color            : #C0C0C0  ;
-  font-size        : 18px     ;
+  text-decoration  : none     ;
+  background-color : inherit  ;
+  font-size        : calc(5px + 12 * ((100vw) / (1440)));
   border-radius    : 3px      ;
   padding          : 10px     ;
   margin-top       : 3vh      ;
   margin-right     : 10vw     ;
   margin-left      : 10vw     ;
-  border           : 1px solid #D0D0D0;
+  /*border           : 1px solid #D0D0D0;*/
 
 }
 
 .Info .download-button:hover{
-  background-color: #59505E;
-  transition      : 0.6s   ;
+  background-color: #FFFFFF ;
+  opacity         : 0.5     ; 
+  transition      : 0.6s    ;
 }
 
 .Info a{
-  text-decoration  : none;
-  color            : #C0C0C0  ;
-  display:block;
+  text-decoration : none    ;
+  background      : none    ;
+  color           : inherit ;
+  display         : block   ;
 }
+
 
 .Info .bagList{
   text-align  : start   ;
   margin-left : 10vw    ;
-  color       : #C0C0C0 ;
 }
 
 
@@ -463,72 +471,123 @@ body{
 */
 
 @media (max-width: 850px) {
-    .PersonalPageHeader .App-logo {
-      width          : 50px    ;
-      height         : 50px   ;
-      padding-top    : 5px    ;
-      padding-bottom : 10px   ;
-      text-align     : center ;
-      float          : middle ;
-      align-items    : center ;
+    .PersonalPageHeader{
+      display : none;
+    }
+
+    .PersonalPageHeaderSmall{
+      display : block;
     }
 
 
-    .PersonalPageHeader {
-      background-color: black               ;
-      opacity         : 0.95                ;
-      height          : 280px               ;
+    .PersonalPageHeaderSmall .MainMenu{
+      background      : inherit             ;
+      opacity         : 1                   ;
+      height          : 65px                ;
       width           : 100%                ;
-      color           : black               ;
       float           : center              ;
       text-align      : center              ;
-      box-shadow      : 0px 0.51px 3px grey ;
-      overflow        : scroll              ;
+      box-shadow      : 0px 0.51px 3px black;
+      position        : fixed               ;
       z-index         : 5                   ;
+      overflow        : hidden              ;
     }
 
-    .PersonalPageHeader ul {
+    .PersonalPageHeaderSmall .MainMenu ul {
+      list-style-type: none   ;
+      margin         : 0      ;
+      padding        : 0      ;
+      overflow       : hidden ;
+    }
+
+    .PersonalPageHeaderSmall .MainMenu li {
+      float        : left;
+    }
+
+    .PersonalPageHeaderSmall .MainMenu .normalButton{
+      width              : calc(100vw - 104px);
+      background-color   : inherit    ;
+      font-size          : 18px       ;
+      height             : 65px       ;
+      border             : none       ;
+      padding            : 0px        ;
+      -webkit-user-select: none       ;
+      user-select        : none       ;
+      font-family        : 'Cinzel'   ;
+    }
+
+
+    .PersonalPageHeaderSmall .MainMenu .normalButton:hover{
+      background-color: #EFEFEF ;
+      opacity         : 0.7     ;
+      transition      : 0.6s    ;
+    }
+
+    .PersonalPageHeaderSmall .MainMenu .normalButton:focus{
+        outline: none ;
+    }
+
+    .PersonalPageHeaderSmall .MainMenu .MenuButton:checked > .SubMenu {
+      height:0px;
+    }
+
+
+
+
+
+    .PersonalPageHeaderSmall .SubMenuHidden{
+      height: 0px;
+      padding-top   : 65px    ;
+      background    : inherit ;
+      overflow      : scroll  ;
+      box-shadow    : 0px 0.51px 3px black;
+    }
+
+    .PersonalPageHeaderSmall .SubMenu{
+      padding-top   : 65px    ;
+      background    : inherit ;
+      overflow      : scroll  ;
+      box-shadow    : 0px 0.51px 3px black;
+    }
+
+    .PersonalPageHeaderSmall .SubMenu ul {
       list-style-type: none   ;
       margin         : 0      ;
       padding        : 0      ;
       overflow       : scroll ;
     }
 
-    .PersonalPageHeader li {
+    .PersonalPageHeaderSmall .SubMenu li button{
       float       : center ;
       align-items : center ;
       width       : 100%   ;
+      height      : 66px   ;
     }
 
 
-
-
-    .PersonalPageHeader button{
-      float              : left    ; 
-      background-color   : inherit ;
-      color              : #D5D5D5 ;
-      font-size          : 16px    ;
-      height             : 43px    ;
-      width              : 100%    ;
-      border-top         : 1px solid #5A5A5A ;
-      border-bottom      : 1px solid #5A5A5A ;
-      border-left        : 1px solid black ;
-      border-right       : 1px solid black ;
-      margin-top         : 0px     ;
-      -webkit-user-select: none    ;
-      user-select        : none    ;
-      font-family: arial ;
-
+    .PersonalPageHeaderSmall .SubMenu .normalButton{
+      background-color   : inherit    ;
+      font-size          : 14px       ;
+      height             : 40px       ;
+      border             : none       ;
+      padding            : 0px        ;
+      -webkit-user-select: none       ;
+      user-select        : none       ;
+      border-bottom : 0.3px solid #464646;
+      font-family        : 'Cinzel'   ;
     }
 
-    .PersonalPageHeader button:hover{
-      background-color: #5A5A5A ;
+
+    .PersonalPageHeaderSmall .SubMenu .normalButton:hover{
+      background-color: #EFEFEF ;
+      opacity         : 0.7     ;
       transition      : 0.6s    ;
     }
 
-    .PersonalPageHeader button:focus{
+    .PersonalPageHeader .SubMenu .normalButton:focus{
         outline: none ;
     }
+
 
     .Background img {
         position  : fixed  ;
@@ -540,8 +599,9 @@ body{
         z-index   : -5     ;
     }
 
+    
     .container{
-      padding-top    : 35vh  ;
+      padding-top    : inherit;
       display        : flex ;
       flex-direction : row  ;
       flex-wrap      : wrap ;
@@ -549,27 +609,74 @@ body{
 
 
     .textBox{
-        color           : white    ;
-        max-width       : 70vw     ; 
         text-align      : center   ;
         z-index         : 0        ;
         opacity         : 0.88     ;
         margin-top      : 5vh      ;
-        margin-left     : 5vw     ;
-        margin-right    : 5vw     ;
+        margin-left     : 5vw      ;
+        margin-right    : 5vw      ;
         border-radius   : 3px      ;
         padding-left    : 50px     ;
         padding-right   : 50px     ;
         padding-top     : 10px     ;
         padding-bottom  : 30px     ;
-        background-color: #0A0A0A  ;
     }
-
+    
 
 }
 
 
 
+.scouts{
+  background-color:#B66849;
+  color           :#5D0E0A;
+}
+
+
+.guides{
+  background-color:#AC7D4C;
+  color           :#371A09;
+}
+
+.louveteaux{
+  background-color:#7066AF;
+  color           :#171559;
+}
+
+.louvettes{
+  background-color:#90A058;
+  color           :#10380E;
+}
+
+.baladins{
+  background-color:#A26AAD;
+  color           :#401569;
+}
+
+
+
+
+
+
+.scouts.download-button{
+  border  : 1px solid #5D0E0A;
+}
+
+.guides.download-button{
+  border  : 1px solid #371A09;
+}
+
+.louveteaux.download-button{
+  border  : 1px solid #171559;
+}
+
+.louvettes.download-button{
+  border  : 1px solid #10380E;
+}
+
+.baladins.download-button{
+  border  : 1px solid #401569;
+}
 
 
 

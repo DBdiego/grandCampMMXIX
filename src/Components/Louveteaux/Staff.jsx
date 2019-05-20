@@ -1,23 +1,27 @@
 import React, { Component } from 'react'                         ;
 import BackgroundImage      from './Images/Background.jpg'       ;
-import Tyr                  from './Images/Tyr.jpg'              ;
-import Odin                 from './Images/Odin.jpg'             ;
-import Loki                 from './Images/Loki.jpg'             ;
-import Thor                 from './Images/Thor.jpg'             ;
-import Magni                from './Images/Magni.jpg'            ;
-import Mimir                from './Images/Mimir.jpg'            ;
+import Akela                from './Images/Akela.jpg'            ;
+import Rikki                from './Images/Rikki.jpg'            ;
+import WonTola              from './Images/WonTola.jpg'          ;
+import Hati                 from './Images/Hati.jpg'             ;
+import Rama                 from './Images/Rama.jpg'             ;
+import Kaa                  from './Images/Kaa.jpg'              ;
+import KalaNag              from './Images/KalaNag.jpg'          ;
+import Chill                from './Images/Chill.jpg'            ;
 import Header               from '../General/Header.jsx'         ;
-import logo                 from './logo.svg' ;
 import '../Layer2.css';
 
-class Staff extends Component {
+class StaffLouveteaux extends Component {
 
     render() {
         let splittedAddress = window.location.href.split('/');
         let section = splittedAddress[splittedAddress.length-2];
         let componentsToRender = (
                 <div className='Staff'>
-                    <Header section={section} logo={logo}/>
+                
+                    <Header 
+                        section = {section}
+                    />
                     <div className={'Background'}>
                         <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
                     </div>
@@ -32,7 +36,7 @@ class Staff extends Component {
 
                             <div className='row'>
                                 <div className='column1'>
-                                    <img src={Odin} className = 'God Odin' alt='' />
+                                    <img src={Akela} className = 'God Akela' alt='' />
                                 </div>
                                 <div className='column2'>
                                     <p className='text'>{`Grande impératrice de Persépolis. Elle dirige son empire d’une main de velours dans un gant 
@@ -54,7 +58,7 @@ class Staff extends Component {
 
                             <div className='row'>
                                 <div className='column1'>
-                                    <img src={Thor} className = 'God Thor' alt='' />
+                                    <img src={Rikki} className = 'God Rikki' alt='' />
                                 </div>
                                 <div className='column2'>
                                     <p className='text'>{`La Dame D’Honneur de l’Impératrice. Elle est sa plus fidèle amie. Elle l’aide dans ses 
@@ -76,7 +80,7 @@ class Staff extends Component {
 
                             <div className='row'>
                                 <div className='column1'>
-                                    <img src={Loki} className = 'God Loki' alt='' />
+                                    <img src={WonTola} className = 'God WonTola' alt='' />
                                 </div>
                                 <div className='column2'>
                                     <p className='text'>{`Le Sâge. Son vieil âge et ses nombreuses expériences font de lui un atout de taille pour 
@@ -97,7 +101,7 @@ class Staff extends Component {
 
                             <div className='row'>
                                 <div className='column1'>
-                                    <img src={Mimir} className = 'God Mimir' alt='' />
+                                    <img src={Hati} className = 'God Hati' alt='' />
                                 </div>
                                 <div className='column2'>
                                     <p className='text'>{`Le Conseiller. Il tient un fonction de gouvernement mais également d’administration. C’est 
@@ -119,7 +123,7 @@ class Staff extends Component {
 
                             <div className='row'>
                                 <div className='column1'>
-                                    <img src={Tyr} className = 'God Tyr' alt='' />
+                                    <img src={Rama} className = 'God Rama' alt='' />
                                 </div>
                                 <div className='column2'>
                                     <p className='text'>{`Chevalier de la garde impériale. Pas juste un chevalier parmi les autres, attention, il a prouvé sa 
@@ -144,7 +148,7 @@ class Staff extends Component {
 
                             <div className='row'>
                                 <div className='column1'>
-                                    <img src={Magni} className = 'God Magni' alt='' />
+                                    <img src={Kaa} className = 'God Kaa' alt='' />
                                 </div>
                                 <div className='column2'>
                                     <p className='text'>{`Le comptable. Si vous saviez à quel point l’Impératrice est dépensière, vous vous demanderiez comment 
@@ -169,7 +173,7 @@ class Staff extends Component {
 
                             <div className='row'>
                                 <div className='column1'>
-                                    <img src={Magni} className = 'God Magni' alt='' />
+                                    <img src={KalaNag} className = 'God KalaNag' alt='' />
                                 </div>
                                 <div className='column2'>
                                     <p className='text'>{`Le fou. Même dans ses moments de plus grande tristesse l’impératrice à toujours regagné le sourire 
@@ -193,7 +197,7 @@ class Staff extends Component {
 
                             <div className='row'>
                                 <div className='column1'>
-                                    <img src={Magni} className = 'God Magni' alt='' />
+                                    <img src={Chill} className = 'God Chill' alt='' />
                                 </div>
                                 <div className='column2'>
                                     <p className='text'>{`Chef de la garde Impériale. Grâce à ses magnifiques stratégies et ses capacités de combats, il est 
@@ -217,7 +221,7 @@ class Staff extends Component {
     };
 };
 
-export default Staff
+export default StaffLouveteaux
 
 
 

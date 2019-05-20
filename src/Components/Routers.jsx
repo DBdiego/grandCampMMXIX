@@ -4,7 +4,7 @@ import Intromap       from './Map.jsx'                        ;
 
 //Scouts
 import ScoutsHome     from './Scouts/Home.jsx'    ;
-import ScoutsHistory  from './Scouts/History.jsx' ;
+//import ScoutsHistory  from './Scouts/History.jsx' ;
 import ScoutsStaff    from './Scouts/Staff.jsx'   ;
 import ScoutsKids     from './Scouts/Kids.jsx'    ;
 import ScoutsInfo     from './Scouts/Info.jsx'    ;
@@ -38,7 +38,7 @@ import BalasKids      from './Baladins/Kids.jsx'    ;
 import BalasInfo      from './Baladins/Info.jsx'    ;
 
 
-
+//<Route path='/grandcamp39/scouts/histoire'      component={ScoutsHistory} />
 
 class Routers extends Component{
   render(){
@@ -46,7 +46,6 @@ class Routers extends Component{
 			<Switch>
 
                 <Route path='/grandcamp39/scouts/accueil'       component={ScoutsHome}    />
-                <Route path='/grandcamp39/scouts/histoire'      component={ScoutsHistory} />
                 <Route path='/grandcamp39/scouts/staff'         component={ScoutsStaff}   />
                 <Route path='/grandcamp39/scouts/kids'          component={ScoutsKids}    />
                 <Route path='/grandcamp39/scouts/info'          component={ScoutsInfo}    />
