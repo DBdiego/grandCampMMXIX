@@ -25,7 +25,7 @@ import LveauxInfo     from './Louveteaux/Info.jsx'    ;
 
 //Louvettes
 import LvettesHome    from './Louvettes/Home.jsx'    ;
-import LvettesHistory from './Louvettes/History.jsx' ;
+import LvettesBadges  from './Louvettes/Badges.jsx'  ;
 import LvettesStaff   from './Louvettes/Staff.jsx'   ;
 import LvettesKids    from './Louvettes/Kids.jsx'    ;
 import LvettesInfo    from './Louvettes/Info.jsx'    ;
@@ -34,58 +34,85 @@ import LvettesInfo    from './Louvettes/Info.jsx'    ;
 import BalasHome      from './Baladins/Home.jsx'    ;
 import BalasHistory   from './Baladins/History.jsx' ;
 import BalasStaff     from './Baladins/Staff.jsx'   ;
-import BalasKids      from './Baladins/Kids.jsx'    ;
+//import BalasKids      from './Baladins/Kids.jsx'    ;
 import BalasInfo      from './Baladins/Info.jsx'    ;
 
 
-//<Route path='/grandcamp39/scouts/histoire'      component={ScoutsHistory} />
+//<Route path='/2019/scouts/histoire'      component={ScoutsHistory} />
+
+//<Route path='/2019/baladins/kids'        component={BalasKids}     />
 
 class Routers extends Component{
   render(){
     return(
 			<Switch>
 
-                <Route path='/grandcamp39/scouts/accueil'       component={ScoutsHome}    />
-                <Route path='/grandcamp39/scouts/staff'         component={ScoutsStaff}   />
-                <Route path='/grandcamp39/scouts/kids'          component={ScoutsKids}    />
-                <Route path='/grandcamp39/scouts/info'          component={ScoutsInfo}    />
+                <Route path='/2019/scouts/accueil'       component={ScoutsHome}    />
+                <Route path='/2019/scouts/staff'         component={ScoutsStaff}   />
+                <Route path='/2019/scouts/kids'          component={ScoutsKids}    />
+                <Route path='/2019/scouts/info'          component={ScoutsInfo}    />
 
-                <Route path='/grandcamp39/guides/accueil'       component={GuidesHome}    />
-                <Route path='/grandcamp39/guides/activites'     component={GuidesHistory} />
-                <Route path='/grandcamp39/guides/staff'         component={GuidesStaff}   />
-                <Route path='/grandcamp39/guides/kids'          component={GuidesKids}    />
-                <Route path='/grandcamp39/guides/info'          component={GuidesInfo}    />
+                <Route path='/2019/guides/accueil'       component={GuidesHome}    />
+                <Route path='/2019/guides/activites'     component={GuidesHistory} />
+                <Route path='/2019/guides/staff'         component={GuidesStaff}   />
+                <Route path='/2019/guides/kids'          component={GuidesKids}    />
+                <Route path='/2019/guides/info'          component={GuidesInfo}    />
 
-                <Route path='/grandcamp39/louveteaux/accueil'   component={LveauxHome}    />
-                <Route path='/grandcamp39/louveteaux/histoire'  component={LveauxHistory} />
-                <Route path='/grandcamp39/louveteaux/staff'     component={LveauxStaff}   />
-                <Route path='/grandcamp39/louveteaux/kids'      component={LveauxKids}    />
-                <Route path='/grandcamp39/louveteaux/info'      component={LveauxInfo}    />
+                <Route path='/2019/louveteaux/accueil'   component={LveauxHome}    />
+                <Route path='/2019/louveteaux/histoire'  component={LveauxHistory} />
+                <Route path='/2019/louveteaux/staff'     component={LveauxStaff}   />
+                <Route path='/2019/louveteaux/kids'      component={LveauxKids}    />
+                <Route path='/2019/louveteaux/info'      component={LveauxInfo}    />
 
-                <Route path='/grandcamp39/louvettes/accueil'    component={LvettesHome}   />
-                <Route path='/grandcamp39/louvettes/histoire'   component={LvettesHistory}/>
-                <Route path='/grandcamp39/louvettes/staff'      component={LvettesStaff}  />
-                <Route path='/grandcamp39/louvettes/kids'       component={LvettesKids}   />
-                <Route path='/grandcamp39/louvettes/info'       component={LvettesInfo}   />
+                <Route path='/2019/louvettes/accueil'    component={LvettesHome}   />
+                <Route path='/2019/louvettes/badges'     component={LvettesBadges} />
+                <Route path='/2019/louvettes/staff'      component={LvettesStaff}  />
+                <Route path='/2019/louvettes/kids'       component={LvettesKids}   />
+                <Route path='/2019/louvettes/info'       component={LvettesInfo}   />
 
-                <Route path='/grandcamp39/baladins/accueil'     component={BalasHome}     />
-                <Route path='/grandcamp39/baladins/histoire'    component={BalasHistory}  />
-                <Route path='/grandcamp39/baladins/staff'       component={BalasStaff}    />
-                <Route path='/grandcamp39/baladins/kids'        component={BalasKids}     />
-                <Route path='/grandcamp39/baladins/info'        component={BalasInfo}     />
+                <Route path='/2019/baladins/accueil'     component={BalasHome}     />
+                <Route path='/2019/baladins/histoire'    component={BalasHistory}  />
+                <Route path='/2019/baladins/staff'       component={BalasStaff}    />
+                <Route path='/2019/baladins/info'        component={BalasInfo}     />
 
+				<Route path='/2019/carte' component={Intromap}/>
+				
 
-				<Route path='/grandcamp39/carte' component={Intromap}/>
+				<Redirect from='/'                to='/2019/carte'      />
+				<Redirect from='/2019/carte'      to='/2019/carte'      />
+				<Redirect from='/2019/scouts'     to='/2019/scouts'     />
+				<Redirect from='/2019/guides'     to='/2019/guides'     />
+				<Redirect from='/2019/louveteaux' to='/2019/louveteaux' />
+				<Redirect from='/2019/louvettes'  to='/2019/louvettes'  />
+				<Redirect from='/2019/baladins'   to='/2019/baladins'   />
 
-				<Redirect from='/'                       to='/grandcamp39/carte'      />
-				<Redirect from='/grandcamp39/carte'      to='/grandcamp39/carte'      />
-				<Redirect from='/grandcamp39/scouts'     to='/grandcamp39/scouts'     />
-				<Redirect from='/grandcamp39/guides'     to='/grandcamp39/guides'     />
-				<Redirect from='/grandcamp39/louveteaux' to='/grandcamp39/louveteaux' />
-				<Redirect from='/grandcamp39/louvettes'  to='/grandcamp39/louvettes'  />
-				<Redirect from='/grandcamp39/baladins'   to='/grandcamp39/baladins'   />
+				<Redirect from='/2019/scouts/accueil'      to='/2019/scouts/accueil'      />
+				<Redirect from='/2019/scouts/staff'        to='/2019/scouts/staff'        />
+				<Redirect from='/2019/scouts/kids'         to='/2019/scouts/kids'         />
+				<Redirect from='/2019/scouts/info'         to='/2019/scouts/info'         />
 
+				<Redirect from='/2019/guides/accueil'      to='/2019/guides/accueil'      />
+				<Redirect from='/2019/guides/activites'    to='/2019/guides/activites'    />
+				<Redirect from='/2019/guides/staff'        to='/2019/guides/staff'        />
+				<Redirect from='/2019/guides/kids'         to='/2019/guides/kids'         />
+				<Redirect from='/2019/guides/info'         to='/2019/guides/info'         />
 
+				<Redirect from='/2019/louveteaux/accueil'  to='/2019/louveteaux/accueil'  />
+				<Redirect from='/2019/louveteaux/histoire' to='/2019/louveteaux/histoire' />
+				<Redirect from='/2019/louveteaux/staff'    to='/2019/louveteaux/staff'    />
+				<Redirect from='/2019/louveteaux/kids'     to='/2019/louveteaux/kids'     />
+				<Redirect from='/2019/louveteaux/info'     to='/2019/louveteaux/info'     /> 
+
+				<Redirect from='/2019/louvettes/accueil'   to='/2019/louvettes/accueil'   />
+				<Redirect from='/2019/louvettes/badges'    to='/2019/louvettes/badges'    />
+				<Redirect from='/2019/louvettes/staff'     to='/2019/louvettes/staff'     />
+				<Redirect from='/2019/louvettes/kids'      to='/2019/louvettes/kids'      />
+				<Redirect from='/2019/louvettes/info'      to='/2019/louvettes/info'      />
+
+				<Redirect from='/2019/baladins/accueil'    to='/2019/baladins/accueil'    />
+				<Redirect from='/2019/baladins/histoire'   to='/2019/baladins/histoire'   />
+				<Redirect from='/2019/baladins/staff'      to='/2019/baladins/staff'      />
+				<Redirect from='/2019/baladins/info'       to='/2019/baladins/info'       />
 
 
 			</Switch>
@@ -94,49 +121,3 @@ class Routers extends Component{
 }
 
 export default Routers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-				<Route path='/grandcamp39/carte'      render={() => <Intromap       routerProps={{socket:socket}} /> } />  
-				<Route path='/grandcamp39/scouts'     render={() => <ScoutsPage     routerProps={{socket:socket}} /> } />  
-				<Route path='/grandcamp39/guides'     render={() => <GuidesPage     routerProps={{socket:socket}} /> } />
-				<Route path='/grandcamp39/louveteaux' render={() => <LouveteauxPage routerProps={{socket:socket}} /> } />  
-				<Route path='/grandcamp39/louvettes'  render={() => <LouvettesPage  routerProps={{socket:socket}} /> } />
-				<Route path='/grandcamp39/baladins'   render={() => <BaladinsPage   routerProps={{socket:socket}} /> } />
-
-				
-				<Route path='/grandcamp39/scouts'     component={ScoutsPage}     />  
-				<Route path='/grandcamp39/guides'     component={GuidesPage}     />
-				<Route path='/grandcamp39/louveteaux' component={LouveteauxPage} />
-				<Route path='/grandcamp39/louvettes'  component={LouvettesPage}  />
-				<Route path='/grandcamp39/baladins'   component={BaladinsPage}   />
-
-
-				<Redirect from='/grandcamp39/scouts/accueil'   to='/grandcamp39/scouts/accueil'  />
-				<Redirect from='/grandcamp39/scouts/histoire'  to='/grandcamp39/scouts/histoire' />
-				<Redirect from='/grandcamp39/scouts/staff'     to='/grandcamp39/scouts/staff'    />
-				<Redirect from='/grandcamp39/scouts/tonviking' to='/grandcamp39/scouts/tonviking'/>
-				<Redirect from='/grandcamp39/scouts/info'      to='/grandcamp39/scouts/info  '   />
-
-				<Redirect from='/grandcamp39/scouts/accueil'   to='/grandcamp39/scouts/accueil'  />
-				<Redirect from='/grandcamp39/scouts/histoire'  to='/grandcamp39/scouts/histoire' />
-				<Redirect from='/grandcamp39/scouts/staff'     to='/grandcamp39/scouts/staff'    />
-				<Redirect from='/grandcamp39/scouts/tonviking' to='/grandcamp39/scouts/tonviking'/>
-				<Redirect from='/grandcamp39/scouts/info'      to='/grandcamp39/scouts/info  '   />
-*/

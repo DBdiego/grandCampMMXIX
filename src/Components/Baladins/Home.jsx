@@ -8,8 +8,17 @@ import '../Layer2.css';
 class Home extends Component {
 
     render() {
+        
         let splittedAddress = window.location.href.split('/');
-        let section = splittedAddress[splittedAddress.length-2];
+        let section = '';
+        if (splittedAddress[splittedAddress.length -1] === ''){
+            section = splittedAddress[splittedAddress.length-3];
+        }else{
+            section = splittedAddress[splittedAddress.length-2];
+        };
+
+        window.scrollTo(0, 0);
+
         let componentsToRender = (
                 <div className='Home'>
 
@@ -23,41 +32,63 @@ class Home extends Component {
                     
                     <div className = 'container'>
                         <div className={'textBox '+ section}>
-                            <p className='textTitle'>{`Scouts de la 39ème, Skàl !!!`}</p>
+                            <p className='textTitle'>{`Bienvenus Villagois Gaulois !!!`}</p>
 
-                            <p className='text'>{`Les Vikings : une terre, une culture, un monde à part !`}</p>
-                           
-                            <p className='text'>{` Ces guerriers à la férocité légendaire, qui ont fait craindre 
-                                l’Europe jusqu’aux confins de la mer Egée. Leurs exploits sont tels qu’ils ont 
-                                traversé les siècles et les traverseront encore.`
+                            <p className='text'>{`Nous voilà bientôt au grand camp ! Pour certains d’entre vous, ça va être une grande première ! 
+                                Pas d’inquiétude, le staff et les autres baladins seront là pour vous épauler et rendre cette expérience inoubliable.`
                                 }</p>
 
-                            <p className='text'>{`Jarls et guerriers, vous trouverez ici quelques-unes des nombreuses 
-                                légendes engendrées par cette civilisation mythique. Vous aurez également 
-                                l’occasion d’en apprendre sur leur culture, leur religion leurs traditions 
-                                mais surtout, sur la personnalité légendaire que vous représenterez, afin de 
-                                vous imprégner des valeurs qu’ils défendaient et ainsi gagner votre place au Valhalla.`
+                            <p className='text'>{`Durant cette semaine de folie, nous aurons besoin de votre aide. Nous avons en effet reçu un appel 
+                                de détresse. Et oui, il y a quelques semaines, nous avons reçu une lettre de deux bons amis. Ils se sont encore fourrés 
+                                dans une mauvaise situation. Dans cette lettre, ils demandent l’aide de tous les baladins sans exception pour 
+                                qu’ensemble, nous résolvions leur problème.`
                                 }</p>
 
-                            <p className='text'>{`Alors partez explorer ce site, inculquez-vous de ce que vous y trouverez, 
-                                et devenez des vrais Vikings. Et quand ce sera fait, préparez votre paquetage, armez votre 
-                                drakkar, car il vous faudra partir pour une grande et belle expédition qui sera à l’image de 
-                                celle de nos ancêtres, et dont vous en reviendrez changés et émerveillés.`
+                            <p className='text'>{`C’est pourquoi, nous vous attendons en pleine forme et remplis d’énergie pour attaquer ce camp 
+                                qui s’annonce extraordinaire !`
                                 }</p>
 
-                            <p className='signature'>{`Ton Staff`}</p>
+                            <p className='signature'>{`Le Staff Baladins`}</p>
                             <p className='names'>
-                                Sika 
+                                Pan-Pan 
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Kodiak
+                                Jiminy
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Margay
+                                Mushu
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Goral
+                                Figaro
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Lycaon
+                                Pongo
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Gibbon</p>
+                                Polochon
+                                &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
+                                Nala</p>
+
+                        </div>
+
+                        <div className={'textBox '+ section}>
+                            <p className='textTitle'>{`PS: Le Grand Camp, C'est Quoi?`}</p>
+
+                            <p className='text'>{`Le camp est le grand final, les baladins et les animateurs l’attendent avec impatience. 
+                                Plein d’aventures et de découvertes sont en perspective…`
+                                }</p>
+
+                            <p className='text'>{`Des activités en tous genres`
+                                }</p>
+
+                            <p className='text'>{`Des grands jeux comme tu n’en as jamais vu`
+                                }</p>
+
+                            <p className='text'>{`Le hike : une grande balade avec un moment de réflexion`
+                                }</p>
+
+                            <p className='text'>{`Et des chouettes veillées`
+                                }</p>
+
+                            <p className='text'>{`Le camp, c’est bien entendu l’occasion de mettre en pratique les valeurs apprises pendant l’année 
+                                telles que le respect, le partage, … Mais aussi de laisser sur le côté les consoles et autres jeux vidéo et de prendre 
+                                un bon bol d’air. `
+                                }</p>
 
                         </div>
                     </div>

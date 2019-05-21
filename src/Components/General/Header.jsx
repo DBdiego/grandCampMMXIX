@@ -8,8 +8,8 @@ class Header extends Component {
     constructor(props) {
         super(props);
 
-        let baseLink = '/grandcamp39'
-        let sectionData={'scouts'    :[{'buttonName'  : 'ACCEUIL'                   ,
+        let baseLink = '/2019'
+        let sectionData={'scouts'    :[{'buttonName'  : 'ACCUEIL'                   ,
                                         'section'     : 'scouts'                    ,
                                         'link'        : baseLink+'/scouts/accueil' },
                                         /*{'buttonName' : 'HISTOIRE'                  ,
@@ -25,7 +25,7 @@ class Header extends Component {
                                         'section'     : 'scouts'                    ,
                                         'link'        : baseLink+'/scouts/info'    }],
 
-                         'guides'    :[{'buttonName'  : 'ACCEUIL'                    ,
+                         'guides'    :[{'buttonName'  : 'ACCUEIL'                    ,
                                         'section'     : 'guides'                     ,
                                         'link'        : baseLink+'/guides/accueil'  },
                                         {'buttonName' : 'ACTIVITES'                  ,
@@ -41,7 +41,7 @@ class Header extends Component {
                                         'section'     : 'guides'                     ,
                                         'link'        : baseLink+'/guides/info'     }],
 
-                         'louveteaux':[{'buttonName'  : 'ACCEUIL'                       ,
+                         'louveteaux':[{'buttonName'  : 'ACCUEIL'                       ,
                                         'section'     : 'louveteaux'                    ,
                                         'link'        : baseLink+'/louveteaux/accueil' },
                                         {'buttonName' : 'HISTOIRE'                      ,
@@ -57,9 +57,12 @@ class Header extends Component {
                                         'section'     : 'louveteaux'                    ,
                                         'link'        : baseLink+'/louveteaux/info'    }],
 
-                         'louvettes' :[{'buttonName'  : 'ACCEUIL'                      ,
+                         'louvettes' :[{'buttonName'  : 'ACCUEIL'                      ,
                                         'section'     : 'louvettes'                    ,
                                         'link'        : baseLink+'/louvettes/accueil' },
+                                        {'buttonName' : 'BADGES'                       ,
+                                        'section'     : 'louvettes'                    ,
+                                        'link'        : baseLink+'/louvettes/badges'  },
                                         {'buttonName' : 'TON STAFF'                    ,
                                         'section'     : 'louvettes'                    ,
                                         'link'        : baseLink+'/louvettes/staff'   },
@@ -70,7 +73,7 @@ class Header extends Component {
                                         'section'     : 'louvettes'                    ,
                                         'link'        : baseLink+'/louvettes/info'    }],
 
-                         'baladins'  :[{'buttonName'  : 'ACCEUIL'                     ,
+                         'baladins'  :[{'buttonName'  : 'ACCUEIL'                     ,
                                         'section'     : 'baladins'                    ,
                                         'link'        : baseLink+'/baladins/accueil' },
                                         {'buttonName' : 'HISTOIRE'                    ,

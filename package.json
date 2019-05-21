@@ -2,7 +2,7 @@
   "name": "grandcamp2019",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://platform.deltaworx.eu/stats",
+  "homepage": "http://94.224.39.153/2019",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "axios": "^0.17.1",

@@ -273,8 +273,33 @@ body{
   box-shadow: 0px 0px 14px 1px #000000;
 }
 
-/* SCOUTS */
 
+
+/* SCOUTS */
+.Staff .Jupiter{
+  width : 10vw ;
+  min-width: 140px;
+}
+
+.Staff .Phebus{
+  width : 10vw ;
+  min-width: 140px;
+}
+
+.Staff .Pluton{
+  width : 10vw;
+  min-width: 140px;
+}
+
+.Staff .Neptune{
+  width : 10vw;
+  min-width: 140px;
+}
+
+.Staff .Mars{
+  width : 10vw;
+  min-width: 140px;
+}
 
 
 /* GUIDES */
@@ -429,7 +454,7 @@ body{
 
 
 
-.Info .download-button{
+.download-button{
   text-decoration  : none     ;
   background-color : inherit  ;
   font-size        : calc(5px + 12 * ((100vw) / (1440)));
@@ -442,13 +467,20 @@ body{
 
 }
 
-.Info .download-button:hover{
+.download-button:hover{
   background-color: #FFFFFF ;
   opacity         : 0.5     ; 
   transition      : 0.6s    ;
 }
 
-.Info a{
+.Info a {
+  text-decoration : none    ;
+  background      : none    ;
+  color           : inherit ;
+  display         : block   ;
+}
+
+.History a {
   text-decoration : none    ;
   background      : none    ;
   color           : inherit ;
@@ -487,7 +519,7 @@ body{
       width           : 100%                ;
       float           : center              ;
       text-align      : center              ;
-      box-shadow      : 0px 0.51px 3px black;
+      /*box-shadow      : 0px 0.51px 3px black;*/
       position        : fixed               ;
       z-index         : 5                   ;
       overflow        : hidden              ;
@@ -573,7 +605,7 @@ body{
       padding            : 0px        ;
       -webkit-user-select: none       ;
       user-select        : none       ;
-      border-bottom : 0.3px solid #464646;
+      border-top : 0.3px solid #464646;
       font-family        : 'Cinzel'   ;
     }
 

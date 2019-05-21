@@ -36,7 +36,7 @@ class RomanEmpireMap extends Component {
                                   'persians'  : 'louveteaux' ,
                                   'gaulans'   : 'baladins'   };
 
-        let target = '/grandcamp39/' + correspondingGroup[d.properties.name] + '/accueil';
+        let target = '/2019/' + correspondingGroup[d.properties.name] + '/accueil';
 
 
         this.setState({redirect: <Redirect to={target}/>});
@@ -44,7 +44,6 @@ class RomanEmpireMap extends Component {
     
 
     createBelgiumMap(){
-        //console.log('BELGIUM MAP');
 
         //===================================  GENERAL  =================================== 
         //let inputData  = this.props.data  ;

@@ -1,6 +1,6 @@
-import React, { Component } from 'react'                        ;
-import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Home.jpg' ;
-import Header               from '../General/Header.jsx'        ;
+import React, { Component } from 'react'                   ;
+import BackgroundImage      from './Images/Background.jpg' ;
+import Header               from '../General/Header.jsx'   ;
 import '../Layer2.css';
 
 
@@ -9,8 +9,17 @@ import '../Layer2.css';
 class Home extends Component {
 
     render() {
+        
         let splittedAddress = window.location.href.split('/');
-        let section = splittedAddress[splittedAddress.length-2];
+        let section = '';
+        if (splittedAddress[splittedAddress.length -1] === ''){
+            section = splittedAddress[splittedAddress.length-3];
+        }else{
+            section = splittedAddress[splittedAddress.length-2];
+        };
+
+        window.scrollTo(0, 0);
+
         let componentsToRender = (
                 <div className='Home'>
                     <Header section={section}/>
@@ -47,7 +56,7 @@ class Home extends Component {
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
                                 Kodiak
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Whypsi
+                                Wipsy
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
                                 Moufflon
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;

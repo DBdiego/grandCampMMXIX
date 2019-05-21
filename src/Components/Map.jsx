@@ -1,11 +1,11 @@
-import React, { Component } from 'react'                    ;
-import RomanEmpireMap       from './Map/RomanEmpireMap.jsx';
-import titleImage           from './Map/test.png';
+import React, { Component } from 'react'                   ;
+import EmpireMap            from './Map/RomanEmpireMap.jsx';
+import titleImage           from './Map/test.png'          ;
 import roseDesVents         from './Map/rose_des_vents.png';
 import '../App.css';
 
 
-class introMap extends Component {
+class IntroMap extends Component {
   constructor(props) {
     super(props);
     this.state = { width: 0, height: 0 };
@@ -26,11 +26,12 @@ class introMap extends Component {
   }
 
   render() {
+
     return (
       <div className = 'IntroPage'>
-          <RomanEmpireMap 
+          <EmpireMap 
                     data   = {[{datapoint: '', count: ''}]}
-                    size   = {[this.state.width, this.state.height]}//[1500, 700]}]}
+                    size   = {[this.state.width, this.state.height]}
                     title  = {'La Méditerranée Antique'}
                     color  = {'#BC9F54'}
                     highlightColor = {'#DDCFA9'}
@@ -46,6 +47,6 @@ class introMap extends Component {
   }
 }
 
-export default introMap;
+export default IntroMap;
 
  

@@ -18,8 +18,17 @@ import '../Layer2.css';
 class StaffLouvettes extends Component {
 
     render() {
+        
         let splittedAddress = window.location.href.split('/');
-        let section = splittedAddress[splittedAddress.length-2];
+        let section = '';
+        if (splittedAddress[splittedAddress.length -1] === ''){
+            section = splittedAddress[splittedAddress.length-3];
+        }else{
+            section = splittedAddress[splittedAddress.length-2];
+        };
+
+        window.scrollTo(0, 0);
+
         let componentsToRender = (
                 <div className='Staff'>
 
@@ -258,7 +267,13 @@ class StaffLouvettes extends Component {
                                     <img src={Heracles} className = 'God Heracles' alt='' />
                                 </div>
                                 <div className='column2'>
-                                    <p className='text'>{``
+                                    <p className='text'>{`Héraclès, fils de Zeus et d’Alcmène, est l'un des héros les plus vénérés de la Grèce Antique. La mythologie 
+                                        grecque lui prête un très grand nombre d’aventures qui le voient voyager à travers le monde, des Doriens puis dans toute la 
+                                        Méditerranée, à partir de l’expansion de la Grande-Grèce, jusqu’aux Enfer. Le roi des dieux (Zeus) a en effet décidé d'avoir 
+                                        un fils capable de venir en aide aux hommes comme aux dieux. Héraclès se distingue de la plupart des héros dont la carrière est 
+                                        centrée autour d'un exploit unique. Les plus connus sont les Douze Travaux, entrepris sur l'ordre d’Eurysthée. C'est au cours du 
+                                        premier d'entre eux, la chasse du lion de Némée, qu'il acquiert ses principaux attributs : la massue, taillée dans le tronc d'un 
+                                        olivier sauvage, et la léonté, la peau de lion.`
                                         }</p>
                                 </div>
                             </div>

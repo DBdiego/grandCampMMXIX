@@ -6,8 +6,15 @@ import '../Layer2.css';
 class History extends Component {
 
     render() {
+        
         let splittedAddress = window.location.href.split('/');
-        let section = splittedAddress[splittedAddress.length-2];
+        let section = '';
+        if (splittedAddress[splittedAddress.length -1] === ''){
+            section = splittedAddress[splittedAddress.length-3];
+        }else{
+            section = splittedAddress[splittedAddress.length-2];
+        };
+
         let componentsToRender = (
                 <div className='History'>
 
