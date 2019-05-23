@@ -53,9 +53,9 @@ class StaffLouvettes extends Component {
                                     <img src={Zeus} className = 'God Zeus' alt='' />
                                 </div>
                                 <div className='column2'>
-                                    <p className='text'>{`Il est le Dieu du Ciel et souverain des dieux de l'Olympe. Zeus correspond au dieu 
+                                    <p className='text'>{`Il est le dieu du ciel et souverain des dieux de l'Olympe. Zeus correspond au dieu 
                                         romain Jupiter. Zeus appartient comme tous les Olympiens, à la seconde génération divine. Il est le 
-                                        dernier fils du Titan Cronos et de Rhéa, frère des divinités Poséidon, Hadès, Hestia, Déméter et Héra.`
+                                        dernier fils du titan Cronos et de Rhéa, frère des divinités Poséidon, Hadès, Hestia, Déméter et Héra.`
                                         }</p>
                                 </div>
                             </div>
@@ -120,15 +120,15 @@ class StaffLouvettes extends Component {
                                     <img src={Apollon} className = 'God Apollon' alt='' />
                                 </div>
                                 <div className='column2'>
-                                    <p className='text'>{`Apollon, Dieu de des arts, du chant, de la musique, de la beauté 
-                                        masculine, de la poésie, de la lumière mais également des purifications et de la guérison est un Dieu civilisateur. 
+                                    <p className='text'>{`Apollon, dieu de des arts, du chant, de la musique, de la beauté 
+                                        masculine, de la poésie, de la lumière mais également des purifications et de la guérison est un dieu civilisateur. 
                                         Il est représenté d’une lyre et armé d’un arc avec des flèches pouvant apporter la peste aux mortels. Apollon est né de 
                                         son père Zeus et de sa mère Léto. Il est le frère jumeau d’Artémis. 
 `
                                         }</p>
 
                                     <p className='text'>{`Il est l’un des principaux dieux capables de divination et ce principalement à Delphes où il rendait 
-                                        ses oracles par la Pythie (personne désignée par le Dieu Apollon pour raconter les prophéties) de Delphes.`
+                                        ses oracles par la Pythie (personne désignée par le dieu Apollon pour raconter les prophéties) de Delphes.`
                                         }</p>
                                 </div>
                             </div>
@@ -147,12 +147,12 @@ class StaffLouvettes extends Component {
                                     <img src={Hades} className = 'God Hades' alt='' />
                                 </div>
                                 <div className='column2'>
-                                    <p className='text'>{`Hadès où Ferao est le dieu des enfers et de la richesse. Il est le frère aîné de Zeus et de Poséidon. 
-                                        Comme Zeus gouverne le Ciel et Poséidon la Mer, Hadès règne sous la terre et pour cette raison il est souvent considéré 
-                                        comme le « maître des Enfers. Il reçoit des Cyclopes la kunée, un casque merveilleux qui le rend invisible, alors que 
+                                    <p className='text'>{`Hadès est le dieu des enfers et de la richesse. Il est le frère aîné de Zeus et de Poséidon. 
+                                        Comme Zeus gouverne le ciel et Poséidon la mer, Hadès règne sous la terre et pour cette raison il est souvent considéré 
+                                        comme le "maître des Enfers". Il reçoit des Cyclopes la kunée, un casque merveilleux qui le rend invisible, alors que 
                                         Zeus reçoit le foudre et Poséidon le trident. Il est donc le seul dieu pouvant être invisible aux yeux des autres. 
                                         C’est d’ailleurs lui qui ouvrira le ventre de son père Cronos pour libérer ses frères et sœurs qui avaient tous grandis 
-                                        dans l’estomac de leur père`
+                                        dans l’estomac de leur père.`
                                         }</p>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@ class StaffLouvettes extends Component {
                                     <img src={Circe} className = 'God Circe' alt='' />
                                 </div>
                                 <div className='column2'>
-                                    <p className='text'>{`Circé est dans la mythologie grecque, la fille du dieu du Soleil, Helios. `
+                                    <p className='text'>{`Circé est dans la mythologie grecque, la fille du dieu du soleil, Helios. `
                                         }</p>
 
                                     <p className='text'>{`Son nom signifie « oiseau de proie ». C’est une déesse très puissante dotée 
@@ -236,15 +236,15 @@ class StaffLouvettes extends Component {
                                         mois de mai. Ils eurent un fils, Carpos, le dieu des fruits.`
                                         }</p>
 
-                                    <p className='text'>{`Chloris est la  fille d’Océan et thétys, qui règnent sur le monde des eaux. Ensemble ils engendrent 3000 
-                                        fleuves et 3000 océanides (nymphes des océans). Chloris aurait pu devenir une de ces belles océanides, mais son père la 
+                                    <p className='text'>{`Chloris est la  fille d’Océan et de thétys, qui règnent sur le monde des eaux. Ensemble ils engendrent 3000 
+                                        fleuves et 3000 océanides (nymphes des océans). Chloris aurait pu devenir une de ses belles océanides, mais son père la 
                                         conçoit avec une mortelle. Elle ne veillera donc pas sur l’élément de la vie, l’eau, comme ces demi-sœurs, mais sur les 
                                         Îles Fortunées. C’est sur ces bouts de terre que séjournent les âmes vertueuses après la mort, notamment celles des héros.`
                                         }</p>
 
-                                    <p className='text'>{`Tout change le jour où Zéphyr, le Vent de l’Ouest, souffle sur les îles Fortunées et aperçoit la nymphe. 
+                                    <p className='text'>{`Tout change le jour où Zéphyr, le vent de l’Ouest, souffle sur les îles Fortunées et aperçoit la nymphe. 
                                         Le souffle coupé par sa beauté, le dieu est frappé en plein cœur. Lui qui demeure d’habitude si doux, prend l’exemple de 
-                                        son frère Borée, le rustre et froid Vent du Nord, et enlève Chloris, l’emmenant dans les airs.`
+                                        son frère Borée, le rustre et froid vent du Nord, et enlève Chloris, l’emmenant dans les airs.`
                                         }</p>
                                 </div>
                             </div>

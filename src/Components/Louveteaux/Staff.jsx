@@ -135,7 +135,7 @@ class StaffLouveteaux extends Component {
                                     <img src={Rama} className = 'God Rama' alt='' />
                                 </div>
                                 <div className='column2'>
-                                    <p className='text'>{`Chevalier de la garde impériale. Pas juste un chevalier parmi les autres, attention, il a prouvé sa 
+                                    <p className='text'>{`Chevalier de la garde impériale. Pas juste un chevalier parmis les autres, attention, il a prouvé sa 
                                         bravoure à de nombreuses reprises ce qui lui a valu les félicitation et les remerciements de l’impératrice à plusieurs 
                                         reprises ! Ses compagnons chevaliers l’estiment beaucoup et les enfants dans les villages entiers de la Perse veulent 
                                         être comme lui.`

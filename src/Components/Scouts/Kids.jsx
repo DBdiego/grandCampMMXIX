@@ -34,7 +34,7 @@ class ScoutsKids extends Component {
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Arretium (Moineaux)`}</p>
 
-                            <p className='text'>{`Ancienne ville étrusque bâtie au 5`}<sup>eme</sup> {`siècle avant J.C., elle fut conquise par Rome en -295, 
+                            <p className='text'>{`Ancienne ville étrusque bâtie au 5`}<sup>ème</sup> {`siècle avant J.C., elle fut conquise par Rome en -295, 
                                 qui la rebaptisa “Arretium” (actuelle Arezzo) .`
                                 }</p>
 
@@ -45,9 +45,10 @@ class ScoutsKids extends Component {
                                 }</p>
 
                             <p className='text'>{`La citée eu aussi un rôle non négligeable lors de la victoire définitive de Rome sur le 
-                                redoutable chef carthaginois, Hannibal Barca. En effet, au cours des années, la ville devint très industrielle 
-                                et militaire. C’est donc entre ses murs que Scipion l’Africain, le général romain qui conquit Cartage, arma 
-                                ses troupes et en recruta davantage.`
+                                redoutable chef carthaginois, Hannibal Barca (Il porte bien son nom car il a pris une tatouille comme le Barça 
+                                face à Liverpool). En effet, au cours des années, la ville devint très industrielle et militaire. C’est donc 
+                                entre ses murs que Scipion l’Africain, le général romain qui conquit Carthage, arma ses troupes et en recruta 
+                                davantage.`
                                 }</p>
 
                             <p className='text'>{`Mais après des décennies à défendre Rome, et à contribuer à sa puissance et son constant progrès, 
@@ -55,8 +56,8 @@ class ScoutsKids extends Component {
                                 Ils profitèrent à plusieurs reprises de troubles civiles dans la capitale pour la revendiquer, mais en vain.`
                                 }</p>
 
-                            <p className='text'>{`Toute l’Italie a eu vent de la réputation du gouverneur local,`}
-                                <mark> Bobcatus Pabokuvus </mark>{`, et de ses fidèles tribuns : derrière leur animal totem quelque peu chétif 
+                            <p className='text'>{`Toute l’Italie eu vent de la réputation du gouverneur local,`}
+                                <mark> Bobcatus Pabokuvus Moinis</mark>{`, et de ses fidèles tribuns : derrière leur animal totem quelque peu chétif 
                                 (un moineau, quoi … ) se cache en vérité un aigle vorace avide de proies diverse, que ce soit à l’intérieur des 
                                 frontières de l’empire, ou au-delà …`
                                 }</p>
@@ -66,9 +67,9 @@ class ScoutsKids extends Component {
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Capoue (Lions)`}</p>
 
-                            <p className='text'>{`Capoue était une ville samnite du 5`}<sup>eme</sup> {`siècle avant JC.  Une légende raconte qu’elle fut fondée 
+                            <p className='text'>{`Capoue était une ville samnite du 5`}<sup>ème</sup> {`siècle avant J.C.  Une légende raconte qu’elle fut fondée 
                                 par Enée, le héros troyen survivant de la guerre de Troie, en l’honneur de son grand-père, Capys. A Rome, les 
-                                habitants prétendaient être les descendant de Romulus, mais à Capoue, on était les descendants d’Enée.`
+                                habitants prétendaient être les descendant de Romulus, mais à Capoue, ils étaient les descendants d’Enée.`
                                 }</p>
 
                             <p className='text'>{`Capoue fut toujours une alliée fidèle de Rome, mais sans jamais tomber sous son joug. Jusqu’en 
@@ -99,10 +100,10 @@ class ScoutsKids extends Component {
                             <p className='textTitle'>{`Rome (Cerfs)`}</p>
 
                             <p className='text'>{`Rome est la légendaire ville de Romulus, descendant du dieu Mars. Mais historiquement, elle fut 
-                                bâtie aux alentours du 7`}<sup>eme</sup> {`siècle avant notre ère. Mais c’est au 3`}<sup>eme</sup> {`siècle avant JC que Rome entame son expansion.`
+                                bâtie aux alentours du 7`}<sup>ème</sup> {`siècle avant notre ère. Mais c’est au 3`}<sup>ème</sup> {`siècle avant JC que Rome entame son expansion.`
                                 }</p>
 
-                            <p className='text'>{`UDurant ce siècle, Rome s’est étendu sur l’Italie, mais entre les invasions incessantes des gaulois 
+                            <p className='text'>{`Durant ce siècle, Rome s’est étendu sur l’Italie, mais entre les invasions incessantes des gaulois 
                                 du Nord, et la guerre contre Hannibal Barca, elle n’a pu s’établir au-delà. Maintenant ces dangers écartés, 
                                 les Romains peuvent enfin prospérer, car à présent, ils tiennent bien des peuples en respect : Les Grecs de la 
                                 péninsule sicilienne, le gaulois du Nord, et les Numides d’Afrique, anciens alliés de Carthage.`
@@ -112,7 +113,7 @@ class ScoutsKids extends Component {
                                 le moment est venu pour eux de tirer avantage de cette déferlante peur.`
                                 }</p>
 
-                            <p className='text'>{`Le Consul, `}<mark>Calimicus Firstclus Scoutalhonnus Cervus</mark>{`, compte justement en profiter, car lui et 
+                            <p className='text'>{`Le Consul, `}<mark>Calimicus Firstclus Trainispleindetrous Scoutalhonnus Cervus</mark>{`, compte justement en profiter, car lui et 
                                 son sénat, ont pour ambition de soumettre le monde Méditerranéen avec le soutien de ses alliés d’Arretium et de 
                                 Capoue.`
                                 }</p>

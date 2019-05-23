@@ -1,18 +1,11 @@
-import React, { Component } from 'react'                        ;
-import BackgroundImage      from './Images/Background.jpg'; //'./Images/Background_Home.jpg' ;
-import Header               from '../General/Header.jsx'        ;
+import React, { Component } from 'react'                   ;
+import BackgroundImage      from './Images/Background.jpg' ;
+import Header               from '../General/Header.jsx'   ;
 import '../Layer2.css';
 
 
-/*
-                    <div className={'Background'}>
-                        <img src={BackgroundImage} className = 'BackgroundImage' alt='' />
-                    </div>
-*/
 
-
-
-
+// LOUVETEAUX //
 class Home extends Component {
 
     render() {

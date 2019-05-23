@@ -58,7 +58,7 @@ class LouveteauxKids extends Component {
                                 }</p>
 
                             <p className='text'>{`La région est mise en valeur par des paysans pratiquant l'irrigation grâce au Tigre et à l'Euphrate. 
-                                L'artisanat est tourné vers les produits de luxe. Le commerce international était très actif, Babylone bénéficiant 
+                                L'artisanat est tourné vers les produits de luxe. Le commerce international étant très actif, Babylone bénéficie 
                                 d'une situation favorable sur les grands axes commerciaux.`
                                 }</p>
 
@@ -91,7 +91,7 @@ class LouveteauxKids extends Component {
                                 }</p>
 
                             <p className='text'>{`Mais aujourd’hui, l’heure est grave ! Le monde méditerranéen est en plein chaos et la menace plane 
-                                sur l’empire perse. En plus des attaques provenant des autres cité, des éclaireurs ont repérés des invasions un peu 
+                                sur l’empire perse. En plus des attaques provenant des autres cité, des éclaireurs ont repéré des invasions un peu 
                                 partout ! Au sud par les Égyptiens, au nord les Gaulois, les Romains et les Grecs à l’ouest. Afin de contrer les 
                                 offensives ennemies et afin de protéger son empire, l’Impératrice Akéla invite toutes ses troupes à se réunir à 
                                 Hollange. Elle compte évidemment sur le Satrape Diego accompagné de son plus fidèle conseiller Pierrick ainsi 
@@ -105,8 +105,8 @@ class LouveteauxKids extends Component {
                             <p className='textTitle'>{`Ispahan (Bleus)`}</p>
 
                             <p className='text'>{`La plus grande et glorieuse nation du monde est sans conteste celle des Perses. Mais s’est-on déjà 
-                                demandé quelle était la plus grande et puissante ville de l’Empire ? La réponse est évidente, la cité d’Ispahan menée 
-                                d’une main de fer par son `}<mark>Satrape Léopold</mark>{`est une ville dont la beauté et la richesse fait pâlir les plus riches nations 
+                                demandé quelle était la plus grande et puissante ville de l’Empire ? La réponse est évidente, la cité d’Ispahan, menée 
+                                d’une main de fer par son `}<mark>Satrape Léopold</mark>{`, est une ville dont la beauté et la richesse fait pâlir les plus riches nations 
                                 du monde. La fortune de cette ville vient principalement des carrières sans fond de lapis lazuli, une pierre bleue dont 
                                 la beauté n’équivaut que son prix.`
                                 }</p>
@@ -115,18 +115,19 @@ class LouveteauxKids extends Component {
                                 amis sont les bienvenus pour se reposer et où aucun ennemi ne peut s’aventurer sans espérer vivre longtemps.`
                                 }</p>
 
-                            <p className='text'>{`La puissance de cette métropole ne s’arrête pas là. Les soldats d’élites de l’Impératrice Akéla, 
+                            <p className='text'>{`La puissance de cette métropole ne s’arrête pas là. Les soldats d’élite de l’Impératrice Akéla, 
                                 connus sous le nom d’« Immortels » ,sont choisis, élevés et entrainés dès la naissances dans la ville d’Ispahan. 
                                 Ces 10 000 hommes mettent les plus grands armés à genoux sans difficulté, la légende raconte qu’il est impossible 
                                 de tuer ces soldats. Peu importe le nombre de coups qu’ils reçoivent. Ils ne laissent aucun survivant sur le champ de bataille.`
                                 }</p>
 
-                            <p className='text'>{`Des générations entières se sont battues, ont saignés, se sont sacrifiés pour élever cette magnifique cité 
-                                d’Ispahan à sa grandeur d’aujourd’hui. Il est maintenant temps pour son roi et ces généraux de s’opposer à la menace qui arrivent. 
-                                Les autres cités qui jalousent cette richesse n’hésiteront pas à se battre pour s’approprier cette cité, au-delà de la Perse 
+                            <p className='text'>{`Des générations entières se sont battues, ont saigné, se sont sacrifiés pour élever cette magnifique cité 
+                                d’Ispahan à sa grandeur d’aujourd’hui. Il est maintenant temps pour son roi et ces généraux de s’opposer à la menace qui arrive. 
+                                Les autres cités qui jalousent cette richesse n’hésiteront pas à se battre pour ce l'approprier, au-delà de la Perse 
                                 d’autres nations telles que les romains, les grecques, les égyptiens et même les gaulois commencent à vouloir s’opposer 
-                                au tsunami des armés Perses. Le Roi Léopold, soutenu par son fidèle conseiller Arnaud , devront être prêt à tout pour élever 
-                                cette ville au-dessus des autres, il devront prouver à leur Impératrice ce que veut dire fidélité, richesse et puissance !!!!`
+                                au tsunami des armées Perses. Le `}<mark>Satrape Léopold</mark>{`, soutenu par son fidèle conseiller `}<mark>Arnaud</mark>{`, 
+                                devront être prêt à tout pour élever cette ville au-dessus des autres, il devront prouver à leur Impératrice ce que veut dire 
+                                fidélité, richesse et puissance !!!!`
                                 }</p>
 
                         </div>
@@ -136,10 +137,10 @@ class LouveteauxKids extends Component {
                             <p className='textTitle'>{`Erzurum (Rouges)`}</p>
 
                             <p className='text'>{`« De toutes les villes, la plus puissante et la plus riche est sans conteste Erzurum »  Kaa : 
-                                conseiller royal et haut magistrat. Nombreuse sont les villes jalouse de la puissance d’Erzurum. Sa position dans 
+                                comptable de l'Impératrice et haut magistrat. Nombreuses sont les villes jalouses de la puissance d’Erzurum. Sa position dans 
                                 l'Empire Perse en fait depuis la nuit des temps une ville capitale. Aussi bien pour la santé économique que militaire 
-                                de l'Empire. En effet situé à 1 945 mètres d'altitude sur le haut plateau arménien, ses immenses remparts en font la 
-                                place forte de la région. Fortement militarisé depuis sa création, les plus grands guerriers du monde Perse y sont nés. 
+                                de l'Empire. En effet situé à 1945 mètres d'altitude sur le haut plateau arménien, ses immenses remparts en font la 
+                                place forte de la région. Fortement militarisée depuis sa création, les plus grands guerriers du monde Perse y sont nés. 
                                 Ce n’est pas pour rien qu’elle est dirigée par le grand `}<mark>Satrape Maximilien</mark>{` et son second `}<mark>Noa</mark>{`.`
                                 }</p>
                             
@@ -161,8 +162,8 @@ class LouveteauxKids extends Component {
                                 de cette citée se déploie sur plusieurs millénaires, depuis la Préhistoire. Les Arméniens, après s'y être fixés, 
                                 développèrent une civilisation originale bien que située au carrefour de grands empires – perse, séleucide, parthe, romain, 
                                 sassanide, byzantin, arabe, turc seldjoukide, mongol, turc ottoman, séfévide, russe – qui vont se disputer son territoire. 
-                                Face aux invasions, les Arméniens ont toujours fait preuve dans d'une volonté farouche de conserver leur identité nationale. 
-                                En effet, ils sont fiers et valeureux et en aucun cas ils ne laisseront des étranger les envahir et changer leurs mœurs.`
+                                Face aux invasions, les Arméniens ont toujours fait preuve d'une volonté farouche de conserver leur identité nationale. 
+                                En effet, ils sont fiers et valeureux et en aucun cas ils ne laisseront des étrangers les envahir et changer leurs mœurs.`
                                 }</p>
                             
                             <p className='text'>{`Même si leur culture est un peu influencée par leurs voisins dans de nombreux domaines (musique, cuisine, 
@@ -176,7 +177,7 @@ class LouveteauxKids extends Component {
                                 }</p>
 
                             <p className='text'>{`C’est sous Tigrane II le Grand que le Royaume d’Arménie atteint son expansion maximale. Il entretient de 
-                                bonnes relations diplomatiques avec les régions qui l’entoure. Il avait bien compris que ses chances étaient meilleures 
+                                bonnes relations diplomatiques avec les régions qui l’entourent. Il avait bien compris que ses chances étaient meilleures 
                                 s'il tournait son regard vers l’Occident romain et eut donc l’excellente idée d’épouser la fille d’une des personnes 
                                 les plus influentes là bas (Mithridate VI du Pont). Cette alliance lui permit de mener par la suite une série de campagnes 
                                 militaires qui aboutirent à l’occupation d’une bonne partie de l’Anatolie orientale.`

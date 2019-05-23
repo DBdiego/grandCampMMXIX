@@ -46,7 +46,7 @@ class History extends Component {
                                 son tour le peuple Mède.`
                                 }</p>
 
-                            <p className='text'>{`C’est alors l’ascension de l’Empire perse. Les conquêtes de Cyrus ne cessaient de croitre 
+                            <p className='text'>{`C’est alors l’ascension de l’Empire perse. Les conquêtes de Cyrus ne cessent de croitre 
                                 jusqu’à faire trembler la puissante Lydie (Asie mineur) et son roi, Crésus. Crésus sait que ce n’est qu’une 
                                 question de temps avant l’arrivée des Perses aux frontières de son royaume. Il décide alors de nouer des alliances 
                                 avec Sparte, les citées grecques d’Ionie, mais également avec l’Egypte et Babylone.`
@@ -63,8 +63,8 @@ class History extends Component {
                             <p className='text'>{`Crésus tomba, et avec lui la Lydie, une partie de l’Egypte et les citées grecques d’Ionie.`
                                 }</p>
 
-                            <p className='text'>{`Cyrus se tourna alors vers l’Asie centrale où il fit quelque conquête territoriale avant de 
-                                revenir en Asie mineur pour conquérir la belle et grande Babylone avant d’en faire sa capitale jusqu’à l’édification 
+                            <p className='text'>{`Cyrus se tourna alors vers l’Asie centrale où il fit quelques conquêtes territoriales avant de 
+                                revenir en Asie mineur pour conquérir la belle et grande Babylone et d’en faire sa capitale jusqu’à l’édification 
                                 de Persépolis en –521 sous ordre de Darius Ier.`
                                 }</p>
 
@@ -76,7 +76,7 @@ class History extends Component {
                                 que les territoires à conquérir. `
                                 }</p>
 
-                            <p className='text'>{`Vers l’Ouest, de nombreux peuples ne demande qu’à tomber sous notre joug :`
+                            <p className='text'>{`Vers l’Ouest, de nombreux peuples ne demandent qu’à tomber sous notre joug :`
                                 }</p>
 
                             <p className='text'><mark>Les Grecs:</mark>{`ce pays bien petit composé de peuples forts mais divisés ne pourra pas 
@@ -101,11 +101,11 @@ class History extends Component {
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Les Satrapes`}</p>
 
-                            <p className='text'>{`L’Empereur et sa suite de Persépolis pourront ainsi compter sur leurs puissantes provinces et 
+                            <p className='text'>{`L’Impératrice et sa suite de Persépolis pourront ainsi compter sur leurs puissantes provinces et 
                                 leurs Satrapes :`
                                 }</p>                            
 
-                            <p className='text'><mark style={{'color':'#17B233'}}>Le Vert</mark>{`des jardins de Babylone et son Satrape Beaudoin`
+                            <p className='text'><mark style={{'color':'#17B233'}}>Le Vert</mark>{`des jardins de Babylone et son Satrape Baudoin`
                                 }</p>
 
                             <p className='text'><mark style={{'color':'#D6C31D'}}>Le Jaune</mark>{`-or des richesses de Kandahar et son Satrape Diego`
@@ -114,7 +114,7 @@ class History extends Component {
                             <p className='text'><mark style={{'color':'#0B31C6'}}>Le Bleu</mark>{`du Lapis Lazuli de la carrière d’Ispahan et son Satrape Léopold`
                                 }</p>
 
-                            <p className='text'><mark style={{'color':'#F0F0F0'}}>Le Blanc</mark>{`d’Yvoir des Eléphants de la province d’Arménisa et son Satrape Brieuc.`
+                            <p className='text'><mark style={{'color':'#F0F0F0'}}>Le Blanc</mark>{`Yvoir des Eléphants de la province d’Arménisa et son Satrape Brieuc.`
                                 }</p>
 
                             <p className='text'><mark style={{'color':'#AF0808'}}>Le Rouge</mark>{`Pourpre des précieux textiles d’Erzurum et son Satrape Maximilien.`

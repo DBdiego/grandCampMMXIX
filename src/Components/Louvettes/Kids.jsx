@@ -92,9 +92,9 @@ class LouvettesKids extends Component {
                                 }</p>
 
                             <p className='text'>{`Pella est une ville du Nord de la Grèce, dans une région appelée “Macédoine”. Jadis, elle fut un 
-                                carrefour important entre la Thrace, un pays barbare, et la Grèce. Au fil des année, il y eu un brassage de cuture, 
+                                carrefour important entre la Thrace, un pays barbare, et la Grèce. Au fil des années, il y eu un brassage de cuture, 
                                 ce qui laissa le reste de la Grèce pensé que Pella devint à son tour une ville barbare. Snobée par le reste du pays, 
-                                Pella fut délaissé et sombra dans l’indifférence des grandes villes comme Athènes. `
+                                Pella fut délaissée et sombra dans l’indifférence des grandes villes comme Athènes. `
                                 }</p>
 
 
@@ -139,7 +139,7 @@ class LouvettesKids extends Component {
                             <p className='text'>{`Spartiate ! Pour la gloire de Votre Mère Patrie !`
                                 }</p>
 
-                            <p className='text'>{`Moi, Ares, fils de Zeus et dieu guerrier, vous ai choisie pour devenir mes légendes parmi 
+                            <p className='text'>{`Moi, Arès, fils de Zeus et dieu guerrier, vous ai choisie pour devenir mes légendes parmi 
                                 les mortels, les hérauts de Thanatos. Et quel meilleur choix que celui de la puissante Sparte pour incarner 
                                 l’honneur et l’art de la guerre, jumelant admiration et effrois aux yeux des cités grecques et même au-delà. 
                                 Le monde ne peut que craindre les descendantes d’Héraclès en personne.`
@@ -210,7 +210,7 @@ class LouvettesKids extends Component {
 
                             <p className='text'>{`Zeus étant tombé amoureux d’Europe, la fille du roi Agénor et de la reine Téléphassa, ne voulait pas 
                                 rendre son actuelle épouse, Héra, jalouse. Pour ce faire, Zeus prit l’apparence d’un taureau pour enlever Europe. Le roi 
-                                Agénor, furieux, envoya ces fils chercher leur sœur.`
+                                Agénor, furieux, envoya ses fils chercher leur sœur.`
                                 }</p>
                             
                             <p className='text'>{`Un de ceux-ci, Cadmus, décida de suivre la première vache qu’il vit. Cette vache l’emmena jusqu’en Béotie 
@@ -229,11 +229,11 @@ class LouvettesKids extends Component {
                             <p className='text'>{`Le Sphinx a le corps d’un lion mais le visage d’une femme. Il attaqua alors la cité de Thèbes pour punir 
                                 ses habitants suite aux actes de leur roi Laïos, assassiné. La bête ravageait les champs et terrorisait les populations. 
                                 Le Sphinx qui ne voulait pas partir, dit qu’il ne partirait que si quelqu’un arrive à répondre à son énigme. Et toutes 
-                                personne qui échouerait serait tuée. `
+                                personne qui échouerait serait tuée.`
                                 }</p>
 
                             <p className='text'>{`Suite à cela, le régent Créon promis la main de la reine veuve Jocaste et la couronne de Thèbes à 
-                                quiconque qui réussirait cette fameuse énigme. `
+                                quiconque réussirait cette fameuse énigme. `
                                 }</p>
 
                             <p className='text'>{`Le temps passa et beaucoup de valeureux guerriers se prêtèrent au jeu mais perdirent la vie. Jusqu’au 
@@ -278,12 +278,12 @@ class LouvettesKids extends Component {
                                 qui était envahie par Sparte.`
                                 }</p>
 
-                            <p className='text'>{`Thèbes avait alors retrouvé son contrôle sur la Béotie et était redouté de tous pour ces stratégies militaires. 
+                            <p className='text'>{`Thèbes avait alors retrouvé son contrôle sur la Béotie et était redouté de tous pour ses stratégies militaires. 
                                 Sparte n’était plus un grand danger pour Thèbes mais Athènes elle restait pourtant un adversaire dangereux.`
                                 }</p>
 
                             <p className='text'>{`Une anecdote que l’histoire ne conte que très rarement, est que sans 6 valeureuses guerrières menées par leurs 
-                                Lieutenants, Thèbes serait certainement restée une petite citée affaiblie et vouée à être assiégée. Ces thébaines qui avaient 
+                                Lieutenants, Thèbes serait certainement restée une petite citée affaiblie et vouée à être assiéger. Ces thébaines qui avaient 
                                 chacune des compétences particulières, que ce soit dans la stratégie, dans l’art de l’esquive, du fait d’avoir une vue de faucon 
                                 pour tirer une flèche à plus d’1km sur l’ennemi ou que ce soit dans la force, dans l’agilité de s’infiltrer dans des lignes 
                                 ennemies pour récolter des informations ou tuer un roi ennemi, ou encore dans la beauté pour tromper plus facilement les 
@@ -296,8 +296,8 @@ class LouvettesKids extends Component {
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Corinthe (Verts)`}</p>
 
-                            <p className='text'>{`La Corinthe est une ville importante car elle contient un port. Avant cette ville antique était l’une des 
-                                plus importante cités de la Grèce antique. Celle-ci abritait Aphrodite, la déesse de l’amour. Elle est située dans les terres 
+                            <p className='text'>{`Corinthe est une ville importante car elle contient un port. Avant cette ville antique était l’une des 
+                                plus importantes cités de la Grèce antique. Celle-ci abritait Aphrodite, la déesse de l’amour. Elle est située dans les terres 
                                 au pied de son acropole. Elle joua un rôle important dans le monde Mycénien. Elle fut la ville la plus puissante après Sparte 
                                 et surtout la plus peuplée et la plus riche. Elle dut sa fortune à sa position dans le  monde  marchand. Car Corinthe contrôlait 
                                 la partie de terre qui reliais le Péloponnèse à l’ Hellade (le reste de la Grèce). Les corinthiens avaient construits deux ports 

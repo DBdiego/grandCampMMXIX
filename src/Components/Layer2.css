@@ -277,27 +277,27 @@ body{
 
 /* SCOUTS */
 .Staff .Jupiter{
-  width : 10vw ;
+  width : 15vw ;
   min-width: 140px;
 }
 
 .Staff .Phebus{
-  width : 10vw ;
+  width : 15vw ;
   min-width: 140px;
 }
 
 .Staff .Pluton{
-  width : 10vw;
+  width : 15vw;
   min-width: 140px;
 }
 
 .Staff .Neptune{
-  width : 10vw;
+  width : 15vw;
   min-width: 140px;
 }
 
 .Staff .Mars{
-  width : 10vw;
+  width : 15vw;
   min-width: 140px;
 }
 
@@ -440,6 +440,12 @@ body{
 
 .Staff .Bonemine{
   width : 15vw;
+}
+
+
+
+.ChariotObelix{
+  width : 25vw;
 }
 
 

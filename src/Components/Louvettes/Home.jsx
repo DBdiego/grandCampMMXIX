@@ -41,7 +41,7 @@ class Home extends Component {
                             <p className='text'>{` Nous sommes fiers et avons l'immense plaisir de vous inviter sur 
                                 nos terres et dans nos cités guerrières ou démocrates. Si toi, jeune déesse de la section 
                                 louvettes de la 39ème Rivière, te sens à la hauteur de graver ta légende et d'entrer dans 
-                                les mythes et les chansons grecs, ce camp est fait pour toi !!! Sans nul doute, vaincre le 
+                                les mythes et les chansons grecques, ce camp est fait pour toi !!! Sans nul doute, vaincre le 
                                 minotaure est un défi de taille. `
                                 }</p>
 

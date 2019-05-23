@@ -30,15 +30,15 @@ class Home extends Component {
                         <div className={'textBox '+ section}>
                             <p className='textTitle'>{`Speculator, Para Bellum !`}</p>
 
-                            <p className='text'>{`Chères Scouts, cette année, nous vous emmenons dans les grands empires 
+                            <p className='text'>{`Chers Scouts, cette année, nous vous emmenons dans les grands empires 
                                 de la méditerranée antique. Mais le vôtre n’est autre que celui du glorieux empire romains.`}</p>
                            
-                            <p className='text'>{`Vous trouverez si dessous l’histoire de vos cités ainsi que l’avènement 
+                            <p className='text'>{`Vous trouverez ci-dessous l’histoire de vos cités ainsi que l’avènement 
                                 de leur grandeur. Imprégnez-vous de leurs légendes, car durant ce grand camp, ce sera à 
                                 vous d’ajouter une nouvelle page à leurs mémoires.`
                                 }</p>
 
-                            <p className='text'>{`Vous aurez aussi l’occasion d’en apprendre sur les divinités qui seront 
+                            <p className='text'>{`Vous aurez aussi l’occasion d’en apprendre plus sur les divinités qui seront 
                                 incarnés par votre staff préféré.`
                                 }</p>
 
@@ -50,15 +50,15 @@ class Home extends Component {
                                 }</p>
 
 
-                            <p className='signature'>{`Ton Staff`}</p>
+                            <p className='signature'>{`Votre Staff`}</p>
                             <p className='names'>
                                 Sika 
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
                                 Kodiak
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Wipsy
+                                Whipsy
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                                Moufflon
+                                Mouflon
                                 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
                                 Goral</p>
                         </div>

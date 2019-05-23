@@ -1,6 +1,7 @@
 import React, { Component } from 'react'                   ;
 import BackgroundImage      from './Images/Background.jpg' ; 
 import Header               from '../General/Header.jsx'   ;
+import Jeux                 from './files/Jeux.pdf';
 import '../Layer2.css';
 
 class History extends Component {
@@ -36,8 +37,8 @@ class History extends Component {
                                 Aquarium, Laudanum et Petitbonum".`
                                 }</p>
                            
-                            <p className='text'>{`Au 8`}<sup>eme</sup> {`Vous l’avez compris, le cri perçant que nous venons 
-                                d’entendre a surgi du village d’Astérix et Obélix.`
+                            <p className='text'>{`Vous l’avez compris, le cri perçant que nous venons d’entendre a surgi du village 
+                                d’Astérix et Obélix.`
                                 }</p>
 
 
@@ -45,7 +46,7 @@ class History extends Component {
                                 la recette de la potion magique.`
                                 }</p>
 
-                            <p className='text'>{`Panoramix est dans tous ses états. Il a mis de décennies à élaborer cette recette magique !`
+                            <p className='text'>{`Panoramix est dans tous ses états. Il a mis des décennies à élaborer cette recette magique !`
                                 }</p>
 
 
@@ -80,6 +81,21 @@ class History extends Component {
 
                             <p className='text'>{`Alors, prêts à relever ce défi ?`
                                 }</p>
+
+                        </div>
+                        <div className={'textBox '+ section}>
+                            <p className='textTitle'>{`En attendant le camp`}</p>
+
+                            <p className='text'>{`Pour les plus impatients d’entre vous, voici quelques jeux et coloriages. Tache d’être le plus 
+                                soigneux possible car une surprise est à la clef !`
+                                }</p>
+                           
+                            <p className={'download-button ' + section}>
+                                <a className={'chansons ' + section} 
+                                   href={Jeux} 
+                                   preview> Quelques Jeux
+                                </a>
+                            </p>
 
                         </div>
                     </div>
